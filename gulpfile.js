@@ -32,6 +32,9 @@ const webpackStream = require('webpack-stream');
 const plumber = require('gulp-plumber');
 const path = require('path');
 const zip = require('gulp-zip');
+const postcss = require('gulp-postcss');
+const tailwindcss = require('tailwindcss');
+
 const rootFolder = path.basename(path.resolve());
 
 // paths
@@ -92,23 +95,20 @@ const svgSprites = () => {
 // scss styles
 const styles = () => {
   return src(paths.srcScss, { sourcemaps: !isProd })
-    .pipe(plumber(
-      notify.onError({
-        title: "SCSS",
-        message: "Error: <%= error.message %>"
-      })
-    ))
-    .pipe(mainSass())
-    .pipe(autoprefixer({
-      cascade: false,
-      grid: true,
-      overrideBrowserslist: ["last 5 versions"]
-    }))
-    .pipe(gulpif(isProd, cleanCSS({
-      level: 2
-    })))
-    .pipe(dest(paths.buildCssFolder, { sourcemaps: '.' }))
-    .pipe(browserSync.stream());
+  .pipe(plumber({
+    errorHandler: notify.onError({
+      title: "SCSS",
+      message: "Error: <%= error.message %>"
+    })
+  }))
+  .pipe(mainSass().on('error', mainSass.logError))
+  .pipe(postcss([
+    tailwindcss('./tailwind.config.js'), // Укажите путь к вашему файлу конфигурации Tailwind CSS, если необходимо
+    // Дополнительные плагины PostCSS можно добавить здесь
+  ]))
+  .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
+  .pipe(dest(paths.buildCssFolder, { sourcemaps: '.' }))
+  .pipe(browserSync.stream());
 };
 
 // styles backend
@@ -257,6 +257,7 @@ const watchFiles = () => {
 
   watch(paths.srcScss, styles);
   watch(paths.srcFullJs, scripts);
+  watch([`${srcFolder}/**/*.html`], styles);
   watch(`${paths.srcPartialsFolder}/*.html`, htmlInclude);
   watch(`${srcFolder}/*.html`, htmlInclude);
   watch(`${paths.resourcesFolder}/**`, resources);

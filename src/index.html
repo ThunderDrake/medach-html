@@ -3,14 +3,16 @@
 
 @include('partials/head.html')
 
-<body class="page__body">
-  <div class="site-container">
+<body>
+  <div >
     @include('partials/header.html')
-    <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+    <main class="flex items-center justify-evenly w-full bg-white dark:bg-black ">
+    <div class="block text-purple-500">
+      asf
+    </div>
+      <div class="block text-purple-500 dark:text-green-500">
+        asdf
+      </div>
     </main>
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
