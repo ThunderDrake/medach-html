@@ -1,1 +1,1 @@
-import { themeswitcher } from "./components/theme-switcher";
+import { header } from "./components/header";

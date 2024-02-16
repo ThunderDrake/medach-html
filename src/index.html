@@ -3,10 +3,26 @@
 
 @include('partials/head.html')
 
-<body >
-  <div class="dark:bg-[#1D1D1D]">
+<body class="relative">
+  <div id="navigation" class="bg-[#242424] hidden h-screen w-full">
+    @include('partials/menuHeader.html')
+    <div class="wrapper text-white ">
+      <ul class="flex xl:flex-col justify-between w-full xl:justify-normal xl:mt-56">
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171]">Последние материалы</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FDBA74]">Топ-Материалы</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#BFDBFE]">Новости</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F9A8D4]">Статьи</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F81717]">Видео</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FFB800]">Подкасты</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#77C845]">Инфографика</li>
+        <li class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#008FA0]">Вакансии</li>
+        <li class="cursor-pointer transition-all duration-300 hover:text-[#A78BFA]">Мероприятия</li>
+      </ul>
+    </div>
+  </div>
+  <div id="main" class="dark:bg-[#1D1D1D] bg-white transition-all ">
     @include('partials/header.html')
-    <main class="wrapper flex-center text-white">
+    <main class="wrapper flex-center  text-white ">
       <div class="flex gap-2">
         <div class="flex flex-col gap-2">
           <div

@@ -8,7 +8,6 @@ import { enableScroll } from '../functions/enable-scroll';
   const overlay = document?.querySelector('[data-menu-overlay]');
 
   burger?.addEventListener('click', (e) => {
-    burger?.classList.toggle('burger--active');
     menu?.classList.toggle('menu--active');
 
     if (menu?.classList.contains('menu--active')) {
@@ -25,7 +24,6 @@ import { enableScroll } from '../functions/enable-scroll';
   overlay?.addEventListener('click', () => {
     burger?.setAttribute('aria-expanded', 'false');
     burger?.setAttribute('aria-label', 'Открыть меню');
-    burger.classList.remove('burger--active');
     menu.classList.remove('menu--active');
     enableScroll();
   });

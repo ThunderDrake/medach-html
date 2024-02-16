@@ -1,21 +1,14 @@
 <header
       class="w-full h-[92px] grid grid-cols-3 justify-items-center items-center"
     >
-    <div data-menu class="hidden">
-      <ul>
-        <li>asd</li>
-        <li>asd</li>
-        <li>asd</li>
-      </ul>
-    </div>
-      <nav class="flex items-center">
+      <nav class="flex items-center justify-start ml-20">
         <button class="btn-reset burger text-white" aria-label="Открыть меню" aria-expanded="false" data-burger>
           <span class="burger__line"></span>
         </button>
-        <ul class="flex ml-5">
+        <ul class="ml-5 hidden lg:flex">
           <li class="text-default mr-5">Новости</li>
           <li class="text-default mr-5">Статьи</li>
-          <li class="text-default mr-5">мероприятия</li>
+          <li class="text-default mr-5">Мероприятия</li>
           <li class="text-default">Вакансии</li>
         </ul>
       </nav>
@@ -28,7 +21,7 @@
             <use href="../img/sprite.svg#search"></use>
           </svg>
         </button>
-        <button id="themeSwitcher">
+        <button class="themeSwitcher">
           <svg class=" w-6 h-6 bg-transparent mx-16 cursor-pointer dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md" >
             <use href="../img/sprite.svg#light-mode" ></use>
           </svg> </button>
