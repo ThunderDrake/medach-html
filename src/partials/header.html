@@ -1,3 +1,40 @@
-<header class="header">
-  <div class="container"></div>
-</header>
+<header
+      class="w-full h-[92px] grid grid-cols-3 justify-items-center items-center"
+    >
+    <div data-menu class="hidden">
+      <ul>
+        <li>asd</li>
+        <li>asd</li>
+        <li>asd</li>
+      </ul>
+    </div>
+      <nav class="flex items-center">
+        <button class="btn-reset burger text-white" aria-label="Открыть меню" aria-expanded="false" data-burger>
+          <span class="burger__line"></span>
+        </button>
+        <ul class="flex ml-5">
+          <li class="text-default mr-5">Новости</li>
+          <li class="text-default mr-5">Статьи</li>
+          <li class="text-default mr-5">мероприятия</li>
+          <li class="text-default">Вакансии</li>
+        </ul>
+      </nav>
+      <div>
+        <img src="../img/logo.png" alt="src" class="dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"/>
+      </div>
+      <div class="flex items-center cursor-pointer">
+        <button>
+          <svg class=" w-6 h-6 bg-transparent dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md">
+            <use href="../img/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <button id="themeSwitcher">
+          <svg class=" w-6 h-6 bg-transparent mx-16 cursor-pointer dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md" >
+            <use href="../img/sprite.svg#light-mode" ></use>
+          </svg> </button>
+
+        <svg class="w-8 h-8 bg-transparent bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer">
+          <use href="../img/sprite.svg#user"></use>
+        </svg>
+      </div>
+    </header>

@@ -1,1 +1,1 @@
-console.log('components');
+import { themeswitcher } from "./components/theme-switcher";

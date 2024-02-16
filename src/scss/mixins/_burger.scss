@@ -10,7 +10,7 @@
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: var(--color-text);
   background-color: transparent;
   cursor: pointer;
 
@@ -20,6 +20,7 @@
     position: absolute;
     left: 0;
     width: 100%;
+
     height: var(--burger-line-height);
     background-color: currentColor;
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;

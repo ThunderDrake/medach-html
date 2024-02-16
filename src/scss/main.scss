@@ -13,6 +13,7 @@
 // подключения компонентов страницы
 @import "./components/header";
 
+.burger {@include burger}
 @layer utilities {
   .wrapper {
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
@@ -27,6 +28,11 @@
   }
   .card-bg{
     @apply bg-no-repeat bg-[length:100%_100%] cursor-pointer ;
-
+  }
+  .text-default{
+    @apply text-[#323232] dark:text-white
+  }
+  .burger-styles {
+    @apply dark:text-white before:text-white after:text-white ;
   }
 }

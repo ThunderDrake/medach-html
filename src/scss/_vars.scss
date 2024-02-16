@@ -9,4 +9,10 @@
 
   // colors
   --light-color: #fff;
+  body[data-theme='light']{
+    --color-text: #323232;
+  }
+  body[data-theme='dark']{
+    --color-text: #fff;
+  }
 }
