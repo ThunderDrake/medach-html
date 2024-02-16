@@ -1,0 +1,7 @@
+$vw-viewport: 1920;
+
+@function get-vw($target) {
+  $vw-context: ($vw-viewport * 0.01) * 1px;
+
+  @return math.div($target, $vw-context) * 1vw;
+}
