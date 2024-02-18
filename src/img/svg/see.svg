@@ -1,0 +1,16 @@
+<svg width="18.214844" height="18.214844" viewBox="0 0 18.2148 18.2148" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip14_13072">
+			<rect id="fi:eye" width="17.202875" height="17.202875" transform="translate(0.505967 0.505967)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="fi:eye/s" width="17.202875" height="17.202875" transform="translate(0.505967 0.505967)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="fi:eye" width="17.202875" height="17.202875" transform="translate(0.505967 0.505967)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip14_13072)">
+		<path id="Vector" d="M9.10718 3.03613C14.4199 3.03613 17.4558 9.10742 17.4558 9.10742C17.4558 9.10742 14.4199 15.1797 9.10718 15.1797C3.79468 15.1797 0.758789 9.10742 0.758789 9.10742C0.758789 9.10742 3.79468 3.03613 9.10718 3.03613Z" stroke="#9CA3AF" stroke-opacity="1.000000" stroke-width="1.214321" stroke-linejoin="round"/>
+		<path id="Vector" d="M9.10742 11.3838C7.84985 11.3838 6.83057 10.3643 6.83057 9.10645C6.83057 7.84961 7.84985 6.83008 9.10742 6.83008C10.365 6.83008 11.3843 7.84961 11.3843 9.10645C11.3843 10.3643 10.365 11.3838 9.10742 11.3838Z" stroke="#9CA3AF" stroke-opacity="1.000000" stroke-width="1.214321" stroke-linejoin="round"/>
+	</g>
+</svg>

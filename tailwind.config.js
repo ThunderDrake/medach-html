@@ -7,10 +7,19 @@ module.exports = {
 
   ],
   theme: {
+    screens:{
+      'xs': "575px",
+      "sm": '640px',
+      "md": "768px",
+      "lg":"1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    },
     extend: {
       color: {
         black: "#000000",
         white: "#FFFFFF",
+        secondary: "#9CA3AF"
       },
       backgroundImage: {
         "radial-gradient-red": "radial-gradient(circle 230px at  top left, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0)), radial-gradient(circle 230px at  bottom right, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0))",

@@ -35,4 +35,7 @@
   .burger-styles {
     @apply dark:text-white before:text-white after:text-white ;
   }
+  .title{
+    @apply text-[34px] xl:text-[48px]  font-medium m-0 p-0
+  }
 }
