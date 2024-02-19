@@ -27,7 +27,11 @@ module.exports = {
         "radial-gradient-orange": "radial-gradient(circle 180px at  top left, rgba(253, 186, 116, .6),rgba(179, 223, 152, 0)),radial-gradient(circle 180px at  bottom right, rgba(253, 186, 116, .6), rgba(179, 223, 152, 0))",
         "radial-gradient-blue": "radial-gradient(circle 180px at  top left, rgba(191, 219, 254, .6),rgba(179, 223, 152, 0)),radial-gradient(circle 180px at  bottom right, rgba(191, 219, 254, .6), rgba(179, 223, 152, 0))",
         "radial-gradient-pink": "radial-gradient(circle 180px at  top left, rgba(249, 168, 212, .6),rgba(179, 223, 152, 0)),radial-gradient(circle 180px at  bottom right, rgba(249, 168, 212, .6), rgba(179, 223, 152, 0))",
-        "linear-red-yellow": "linear-gradient(#F87171,#FDBA74)"
+        "linear-red-yellow": "linear-gradient(#F87171,#FDBA74)",
+        "linear-yellow-blue": "linear-gradient(#FDBA74,#BFDBFE)",
+        "linear-blue-pink": "linear-gradient(#BFDBFE,#F83A95)",
+
+
       },
       fontFamily: {
         golos: "Golos Text, sans-serif",
