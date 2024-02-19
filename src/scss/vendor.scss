@@ -12,5 +12,35 @@
 // // стили для свайпера
 @import "../../node_modules/swiper/swiper-bundle.min";
 
+.swiper-wrapper{
+  width: 100%;
+  max-width: 800px;
+}
+.swiper-button-prev{
+  left: 0;
+  top: auto ;
+  bottom: 0;
+  z-index: 55;
+}
+.swiper-button-next{
+  right: 0;
+  top: auto ;
+  bottom: 0;
+  z-index: 55;
+}
+@media (min-width:1200px) {
+  .swiper-button-prev{
+    left: 105px;
+    top: 50%;
+    bottom: auto;
+    z-index: 55;
+  }
+  .swiper-button-next{
+    right: 105px;
+    top: 50%;
+    bottom: auto;
+    z-index: 55;
+  }
+}
 // стили для скролла simplebar
 // @import "../../node_modules/simplebar/dist/simplebar.min";
