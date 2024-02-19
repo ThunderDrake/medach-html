@@ -31,7 +31,7 @@ module.exports = {
         "linear-yellow-blue": "linear-gradient(#FDBA74,#BFDBFE)",
         "linear-blue-pink": "linear-gradient(#BFDBFE,#F83A95)",
         "linear-pink-red": "linear-gradient(#F83A95,#F81717)",
-
+        "linear-lightred-lightyellow": "linear-gradient(#F81717,#FFB800)",
 
       },
       fontFamily: {

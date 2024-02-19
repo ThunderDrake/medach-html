@@ -50,11 +50,16 @@ import { burger } from './functions/burger';
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
