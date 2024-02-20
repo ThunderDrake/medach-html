@@ -5,10 +5,8 @@ document.addEventListener("DOMContentLoaded",() => {
 
   accordionButtons.forEach((button,i) => {
     button.addEventListener("click", () => {
-      console.log(accordionContents[i].classList.contains('video-section'))
-      console.log(accordionContents[i].classList)
 
-      if(accordionContents[i].classList.contains('video-section')){
+      if(accordionContents[i].classList.contains('one-col')){
         if(accordionContents[i].classList.contains("grid-rows-[1fr]")) {
           accordionContents[i].classList.remove("grid-rows-[1fr]");
           accordionContents[i].classList.remove("opacity-100");

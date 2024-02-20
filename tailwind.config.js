@@ -33,6 +33,9 @@ module.exports = {
         "linear-pink-red": "linear-gradient(#F83A95,#F81717)",
         "linear-lightred-lightyellow": "linear-gradient(#F81717,#FFB800)",
         "linear-yellow-green": "linear-gradient(#FFB800,#77C845)",
+        "linear-green-blue": "linear-gradient(#77C845,#008FA0)",
+        "linear-blue-purple": "linear-gradient(#008FA0,#A78BFA)",
+
 
 
       },
