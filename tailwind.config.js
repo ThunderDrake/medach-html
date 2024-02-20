@@ -19,7 +19,7 @@ module.exports = {
       color: {
         black: "#000000",
         white: "#FFFFFF",
-        secondary: "#9CA3AF"
+        secondary: "#9CA3AF",
       },
       backgroundImage: {
         "radial-gradient-red": "radial-gradient(circle 230px at  top left, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0)), radial-gradient(circle 230px at  bottom right, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0))",
@@ -32,6 +32,8 @@ module.exports = {
         "linear-blue-pink": "linear-gradient(#BFDBFE,#F83A95)",
         "linear-pink-red": "linear-gradient(#F83A95,#F81717)",
         "linear-lightred-lightyellow": "linear-gradient(#F81717,#FFB800)",
+        "linear-yellow-green": "linear-gradient(#FFB800,#77C845)",
+
 
       },
       fontFamily: {

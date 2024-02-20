@@ -50,17 +50,24 @@ import { burger } from './functions/burger';
 // });
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
-const swiper = new Swiper('.swiper', {
+import Swiper, { Navigation } from 'swiper';
+Swiper.use([Navigation]);
+const swiper = new Swiper('.mySwiper', {
   speed: 400,
   slidesPerView: 'auto',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '#video-next',
+    prevEl: '#video-prev',
   },
 });
-
+const swiper2 = new Swiper('.mySwiper2', {
+  speed: 400,
+  slidesPerView: '1',
+  navigation: {
+    nextEl: '#audio-next',
+    prevEl: '#audio-prev',
+  },
+});
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
 // AOS.init();

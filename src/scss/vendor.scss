@@ -16,17 +16,29 @@
   width: 100%;
   max-width: 800px;
 }
+.swiper-wrapper-audio{
+  width: 100% !important;
+  max-width: 400px !important;
+}
 .swiper-button-prev{
   left: 0;
   top: auto ;
   bottom: 0;
   z-index: 55;
+  color: #323232;
+
 }
 .swiper-button-next{
   right: 0;
   top: auto ;
   bottom: 0;
   z-index: 55;
+  color: #323232;
+
+}
+.swiper-slide-audio{
+  width: 100%;
+  max-width: 800px;
 }
 @media (min-width:1200px) {
   .swiper-button-prev{
