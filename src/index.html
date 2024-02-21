@@ -5,55 +5,55 @@
   <body class="relative">
     <div
       id="navigation"
-      class="bg-[#242424] hidden h-screen fixed w-full overflow-hidden"
+      class="bg-[#242424] hidden h-screen fixed w-full overflow-hidden opacity-0 transition-all duration-500"
     >
       @include('partials/menuHeader.html')
-      <div class="text-white 2xl:ml-1 pt-4 md:pt-0">
+      <div class="text-white 3xl:ml-28 pt-4 md:pt-0">
         <ul
-          class="grid justify-items-center 2xl:grid-cols-1 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-3 2xl:flex 2xl:flex-col mt-10 2xl:mt-44"
+          class="grid justify-items-center grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-3 3xl:flex 3xl:flex-col mt-10 3xl:mt-50"
         >
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171] text-center"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171] text-center 3xl:text-left menuLink"
           >
             Последние материалы
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FDBA74]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FDBA74] menuLink"
           >
             Топ-Материалы
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#BFDBFE]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#BFDBFE] menuLink"
           >
             Новости
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F9A8D4]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F9A8D4] menuLink"
           >
             Статьи
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F81717]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F81717] menuLink"
           >
             Видео
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FFB800]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FFB800] menuLink"
           >
             Подкасты
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#77C845]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#77C845] menuLink"
           >
             Инфографика
           </li>
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#008FA0]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#008FA0] menuLink"
           >
             Вакансии
           </li>
           <li
-            class="cursor-pointer transition-all duration-300 hover:text-[#A78BFA]"
+            class="cursor-pointer transition-all duration-300 hover:text-[#A78BFA] menuLink"
           >
             Мероприятия
           </li>
@@ -61,7 +61,10 @@
         <ul></ul>
       </div>
     </div>
-    <div id="main" class="dark:bg-[#1D1D1D] bg-white transition-all">
+    <div
+      id="main"
+      class="dark:bg-[#1D1D1D] bg-white transition-all duration-500"
+    >
       @include('partials/header.html') @include('partials/hero.html')
       @include('partials/lastMaterial.html')
       @include('partials/topMaterial.html') @include('partials/news.html')

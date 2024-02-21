@@ -1,5 +1,5 @@
 <section id="top_material" class="mt-24 bg-[#323232]">
-  <div class="wrapper text-white !pb-0">
+  <div class="wrapper text-white !pb-0 !pt-0">
     <div class="w-full flex items-center flex-wrap xs:flex-nowrap relative">
       <div
         class="w-[20px] h-[20px] rounded-full bg-[#008FA0] absolute -left-10"
@@ -9,7 +9,12 @@
         class="h-[1px] bg-[#E1E1E4] w-full ml-8 opacity-50 hidden xs:block"
       ></span>
       <button class="xs:ml-8 see-button">
-        <svg class="w-[40px] h-[40px]">
+        <svg
+          class="w-[40px] h-[40px] opacity-0 hidden transition-all duration-300"
+        >
+          <use xlink:href="img/sprite.svg#eye-white"></use>
+        </svg>
+        <svg class="w-[40px] h-[40px] opacity-100 transition-all duration-300">
           <use xlink:href="img/sprite.svg#unsee-white"></use>
         </svg>
       </button>

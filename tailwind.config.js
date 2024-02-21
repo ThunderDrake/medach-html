@@ -8,13 +8,15 @@ module.exports = {
   ],
   theme: {
     screens:{
+      'xxxs': '350px',
       'xxs':'450px',
       'xs': "575px",
       "sm": '640px',
       "md": "768px",
       "lg":"1024px",
       "xl": "1280px",
-      "2xl": "1536px"
+      "2xl": "1536px",
+      '3xl': '1920px',
     },
     extend: {
       color: {

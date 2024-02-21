@@ -5,6 +5,15 @@ document.addEventListener("DOMContentLoaded",() => {
 
   accordionButtons.forEach((button,i) => {
     button.addEventListener("click", () => {
+      console.log(button.childNodes)
+      button.childNodes[1].classList.toggle('opacity-0');
+      button.childNodes[1].classList.toggle('opacity-100');
+      button.childNodes[3].classList.toggle('opacity-0');
+      button.childNodes[3].classList.toggle('opacity-100');
+      setTimeout(()=>{
+        button.childNodes[1].classList.toggle('hidden');
+        button.childNodes[3].classList.toggle('hidden');
+      },500)
 
       if(accordionContents[i].classList.contains('one-col')){
         if(accordionContents[i].classList.contains("grid-rows-[1fr]")) {
