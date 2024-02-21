@@ -1,0 +1,290 @@
+<div class="graph-modal">
+  <div
+    class="graph-modal__container"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="search"
+  >
+    <button
+      class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    ></button>
+    <div class="graph-modal__content">
+      <h2 class="text-4xl text-[#2B2C2E]">Поиск</h2>
+      <div class="flex mt-8 items-center">
+        <svg class="h-[24px] w-[24px]">
+          <use xlink:href="img/sprite.svg#modal-search"></use>
+        </svg>
+        <input
+          type="text"
+          class="border-l-[1px] border-l-[#9799A5] pl-1 ml-3 w-full"
+          placeholder="Введите поисковый запрос"
+        />
+      </div>
+      <div class="mt-12">
+        <h2 class="text-4xl mb-8 text-[#2B2C2E]">Поиск по Категориям</h2>
+        <div
+          class="text-[#2B2C2E] flex-between gap-2 md:gap-0 overflow-x-auto overflow-y-hidden"
+        >
+          <div
+            class="p-1 h-[30px] bg-[#D1ECC1] border-[#77C845] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#77C845] opacity-80 m-0 mr-1 p-0"
+            ></div>
+            Инфографика
+          </div>
+          <div
+            class="p-1 h-[30px] bg-[#BFDBFE] border-[#4D9BFD] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0"
+            ></div>
+            Новость
+          </div>
+          <div
+            class="p-1 h-[30px] bg-[#F1BAEC] border-[#F83A95] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-1 p-0"
+            ></div>
+            Статья
+          </div>
+          <div
+            class="p-1 h-[30px] bg-[#FDE68A] border-[#FFB800] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#FFB800] m-0 mr-1 p-0"
+            ></div>
+            Подкаст
+          </div>
+          <div
+            class="p-1 h-[30px] bg-[#FFAFA9] border-[#F81717] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#F81717] m-0 mr-1 p-0"
+            ></div>
+            Видео
+          </div>
+          <div
+            class="p-1 h-[30px] bg-[#B7ADF5] border-[#7B67F5] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#7B67F5] m-0 mr-1 p-0"
+            ></div>
+            Мероприятие
+          </div>
+          <div
+            class="p-1 h-[30px] bg-[#89D7E0] border-[#008FA0] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <div
+              class="w-[10px] h-[10px] rounded-full bg-[#008FA0] m-0 mr-1 p-0"
+            ></div>
+            Вакансия
+          </div>
+          <div
+            class="p-1 h-[50px] lg:h-[30px] w-[150px] bg-white border-[#323232] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
+          >
+            <svg class="w-[10px] h-[10px]">
+              <use xlink:href="img/sprite.svg#redaction-darkmode"></use>
+            </svg>
+            Выбор Редакции
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <h3 class="text-[#2B2C2E] text-2xl">Поиск по тегам</h3>
+        <div
+          class="grid grid-cols-1 xxs:grid-cols-2 lg:grid-cols-4 mt-6 gap-4 max-h-[180px] justify-items-center border-b-[1px] border-b-[#D5D6DB]/40 pb-6 overflow-hidden"
+          id="tags"
+        >
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom" checked />
+            <label
+              for="custom"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom1" checked />
+            <label
+              for="custom1"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom3" checked />
+            <label
+              for="custom3"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom4" checked />
+            <label
+              for="custom4"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom6" checked />
+            <label
+              for="custom5"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom7" checked />
+            <label
+              for="custom7"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom8" checked />
+            <label
+              for="custom8"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom10" checked />
+            <label
+              for="custom9"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom11" checked />
+            <label
+              for="custom11"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom12" checked />
+            <label
+              for="custom12"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom13" checked />
+            <label
+              for="custom13"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom14" checked />
+            <label
+              for="custom14"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom15" checked />
+            <label
+              for="custom15"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom16" checked />
+            <label
+              for="custom16"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom17" checked />
+            <label
+              for="custom17"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom18" checked />
+            <label
+              for="custom18"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom19" checked />
+            <label
+              for="custom19"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom20" checked />
+            <label
+              for="custom20"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom21" checked />
+            <label
+              for="custom21"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" class="hidden peer" id="custom22" checked />
+            <label
+              for="custom22"
+              class="relative flex h-8 cursor-pointer pl-8 select-none text-slate-400 before:absolute before:left-0 before:flex before:h-6 before:w-6 before:items-center before:justify-center before:rounded-[4px] before:border before:border-[#323232]/80 before:bg-white before:transition-[background-color] before:duration-300 before:ease-in before:content-[''] peer-checked:before:text-[#323232]/80 peer-checked:before:content-['✔'] peer-checked:before:font-bold peer-checked:before:transition-[background-color] peer-checked:before:duration-300 peer-checked:before:ease-in"
+            >
+              Анестезиология
+            </label>
+          </div>
+        </div>
+        <button id="more" class="mx-auto mt-3 cursor-pointer block">
+          <svg class="w-4 h-4 transition-all duration-300">
+            <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

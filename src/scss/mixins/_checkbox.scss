@@ -6,6 +6,7 @@
   &__field {
     appearance: none;
     position: absolute;
+
   }
 
   &__content {
@@ -17,9 +18,9 @@
       position: absolute;
       left: 0;
       top: 0;
+      width: 30px;
+      height: 30px;
       border: 1px solid #000;
-      width: 15px;
-      height: 15px;
       box-sizing: border-box;
     }
 
