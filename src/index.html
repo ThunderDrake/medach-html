@@ -8,12 +8,12 @@
       class="bg-[#242424] hidden h-screen fixed w-full overflow-hidden"
     >
       @include('partials/menuHeader.html')
-      <div class="text-white xl:ml-5 2xl:ml-10">
+      <div class="text-white 2xl:ml-1 pt-4 md:pt-0">
         <ul
-          class="flex xl:flex-col justify-between xl:justify-normal mt-10 xl:mt-44"
+          class="grid justify-items-center 2xl:grid-cols-1 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-3 2xl:flex 2xl:flex-col mt-10 2xl:mt-44"
         >
           <li
-            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171]"
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171] text-center"
           >
             Последние материалы
           </li>
@@ -58,6 +58,7 @@
             Мероприятия
           </li>
         </ul>
+        <ul></ul>
       </div>
     </div>
     <div id="main" class="dark:bg-[#1D1D1D] bg-white transition-all">

@@ -1,27 +1,55 @@
-    <div
-      class="w-full h-[92px] grid grid-cols-3 justify-items-center items-center"
-    >
-    <div class="ml-20 lg:ml-0">
-      <button class="btn-reset burger burger--active burger-menu" aria-label="Открыть меню" aria-expanded="false" data-burger>
+<div class="flex flex-col items-center">
+  <div
+    class="w-full h-[92px] grid grid-cols-3 justify-items-center items-center"
+  >
+    <div class="ml-8 md:ml-20">
+      <button
+        class="btn-reset burger burger--active burger-menu"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
         <span class="burger__line"></span>
       </button>
     </div>
-      <div>
-        <img src="../img/logo-white.png" alt="src" />
-      </div>
-      <div class="flex items-center cursor-pointer">
-        <button>
-          <svg class=" w-6 h-6 bg-transparent ">
-            <use href="../img/sprite.svg#search-light"></use>
-          </svg>
-        </button>
-        <button class="themeSwitcher">
-          <svg class=" w-6 h-6 bg-transparent mx-16 cursor-pointer " >
-            <use href="../img/sprite.svg#light-mode-light" ></use>
-          </svg> </button>
-
-        <svg class="w-8 h-8 bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer">
-          <use href="../img/sprite.svg#user"></use>
-        </svg>
-      </div>
+    <div>
+      <img src="../img/logo-white.png" alt="src" />
     </div>
+    <div class="hidden md:flex items-center cursor-pointer">
+      <button>
+        <svg class="w-6 h-6 bg-transparent">
+          <use href="../img/sprite.svg#search-light"></use>
+        </svg>
+      </button>
+      <button class="themeSwitcher">
+        <svg class="w-6 h-6 bg-transparent mx-16 cursor-pointer">
+          <use href="../img/sprite.svg#light-mode-light"></use>
+        </svg>
+      </button>
+
+      <svg
+        class="w-8 h-8 bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer"
+      >
+        <use href="../img/sprite.svg#user"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="flex md:hidden items-center cursor-pointer">
+    <button>
+      <svg class="w-6 h-6 bg-transparent">
+        <use href="../img/sprite.svg#search-light"></use>
+      </svg>
+    </button>
+    <button class="themeSwitcher">
+      <svg class="w-6 h-6 bg-transparent mx-16 cursor-pointer">
+        <use href="../img/sprite.svg#light-mode-light"></use>
+      </svg>
+    </button>
+
+    <svg
+      class="w-8 h-8 bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer"
+    >
+      <use href="../img/sprite.svg#user"></use>
+    </svg>
+  </div>
+</div>
