@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
   accordionButtons.forEach((button,i) => {
     button.addEventListener("click", () => {
-        console.log(button.childNodes)
+        console.log('test ver')
       if(button.childNodes[1].classList.contains('opacity-0')){
         button.childNodes[1].classList.add('opacity-100');
         button.childNodes[1].classList.remove('opacity-0');
