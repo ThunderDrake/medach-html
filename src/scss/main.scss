@@ -36,6 +36,6 @@
     @apply dark:text-white before:text-white after:text-white ;
   }
   .title{
-    @apply text-[28px] mr-10 md:mr-0 md:text-[34px] xl:text-[48px]  font-medium m-0 p-0
+    @apply text-[28px] mr-10 md:mr-0 md:text-[34px] xl:text-[48px] font-helvetica font-medium m-0 p-0;
   }
 }

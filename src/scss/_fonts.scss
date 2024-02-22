@@ -1,1 +1,17 @@
 @include font-face("Inter", "../fonts/Inter-Bold", 700, normal);
+@include font-face("Inter", "../fonts/Inter-Regular", 400, normal);
+
+@include font-face("Golos", "../fonts/golos-text_demibold", 600, normal);
+@include font-face("Golos", "../fonts/golos-text_medium", 500, normal);
+@include font-face("Golos", "../fonts/golos-text_regular", 400, normal);
+
+@include font-face("Helvetica", "../fonts/HelveticaNeueCyr-LightItalic", 300, italic);
+@include font-face("Helvetica", "../fonts/HelveticaNeueCyr-Roman", 400, normal);
+@include font-face("Helvetica", "../fonts/HelveticaNeueCyr-Italic", 400, italic);
+@include font-face("Helvetica", "../fonts/HelveticaNeueCyr-Medium", 500, normal);
+@include font-face("Helvetica", "../fonts/HelveticaNeueCyr-Bold", 700, normal);
+@include font-face("Helvetica", "../fonts/HelveticaNeueCyr-BoldItalic", 700, italic);
+
+@include font-face("Orbitron", "../fonts/Orbitron-Medium", 500, italic);
+
+

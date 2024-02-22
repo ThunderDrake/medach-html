@@ -9,8 +9,8 @@
       class="btn-reset js-modal-close graph-modal__close"
       aria-label="Закрыть модальное окно"
     ></button>
-    <div class="graph-modal__content">
-      <h2 class="text-4xl text-[#2B2C2E]">Поиск</h2>
+    <div class="graph-modal__content font-helvetica">
+      <h2 class="text-4xl text-[#2B2C2E] font-medium">Поиск</h2>
       <div class="flex mt-8 items-center">
         <svg class="h-[24px] w-[24px]">
           <use xlink:href="img/sprite.svg#modal-search"></use>
@@ -22,9 +22,11 @@
         />
       </div>
       <div class="mt-12">
-        <h2 class="text-4xl mb-8 text-[#2B2C2E]">Поиск по Категориям</h2>
+        <h2 class="text-4xl font-medium mb-8 font-inter text-[#2B2C2E]">
+          Поиск по Категориям
+        </h2>
         <div
-          class="text-[#2B2C2E] flex-between gap-2 md:gap-0 overflow-x-auto overflow-y-hidden"
+          class="text-[#2B2C2E] flex-between gap-2 overflow-x-auto overflow-y-hidden"
         >
           <div
             class="p-1 h-[30px] bg-[#D1ECC1] border-[#77C845] opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
@@ -93,7 +95,7 @@
         </div>
       </div>
       <div class="mt-10">
-        <h3 class="text-[#2B2C2E] text-2xl">Поиск по тегам</h3>
+        <h3 class="text-[#2B2C2E] text-2xl font-medium">Поиск по тегам</h3>
         <div
           class="grid grid-cols-1 xxs:grid-cols-2 lg:grid-cols-4 mt-6 gap-4 max-h-[180px] justify-items-center border-b-[1px] border-b-[#D5D6DB]/40 pb-6 overflow-hidden"
           id="tags"
@@ -283,6 +285,14 @@
           <svg class="w-4 h-4 transition-all duration-300">
             <use xlink:href="img/sprite.svg#arrow-bottom"></use>
           </svg>
+        </button>
+      </div>
+      <div class="flex justify-end items-center mt-2">
+        <span class="text-[#9799A5] text-sm mr-3">0 Тэгов выбрано</span>
+        <button
+          class="h-[45px] w-[152px] rounded-md bg-[#9799A5] text-white text-[16px] hover:bg-[#888a94] transition-all duration-300"
+        >
+          Найти
         </button>
       </div>
     </div>

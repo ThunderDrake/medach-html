@@ -43,7 +43,11 @@ module.exports = {
 
       },
       fontFamily: {
-        golos: "Golos Text, sans-serif",
+        golos: "Golos, sans-serif",
+        helvetica: "Helvetica, sans-serif",
+        inter: "Inter, sans-serif",
+        orbitron: "Orbitron, sans-serif",
+
 
       },
     },

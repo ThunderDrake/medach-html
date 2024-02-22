@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded",() => {
 
           accordionContents[i].classList.remove("grid-cols-1");
           accordionContents[i].classList.remove("lg:grid-cols-2");
-
          }
          else{
           accordionContents[i].classList.remove("grid-rows-[0fr]");
