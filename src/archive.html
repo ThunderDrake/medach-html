@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru" class="page scroll-smooth">
+  @include('partials/head.html')
+
+  <body class="relative font-golos font-normal">
+    <div
+      id="navigation"
+      class="bg-[#242424] hidden h-screen fixed w-full overflow-hidden opacity-0 transition-all duration-500"
+    >
+      @include('partials/menuHeader.html')
+      <div class="text-white 3xl:ml-28 pt-4 md:pt-0 font-medium">
+        <ul
+          class="grid justify-items-center grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-3 3xl:flex 3xl:flex-col mt-10 3xl:mt-50"
+        >
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171] text-center 3xl:text-left menuLink"
+          >
+            <a href="#last_material">Последние материалы</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FDBA74] menuLink"
+          >
+            <a href="#top_material">Топ-Материалы</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#BFDBFE] menuLink"
+          >
+            <a href="#news">Новости</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F9A8D4] menuLink"
+          >
+            <a href="#articles">Статьи</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F81717] menuLink"
+          >
+            <a href="#video">Видео</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FFB800] menuLink"
+          >
+            <a href="#audio">Подкасты</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#77C845] menuLink"
+          >
+            <a href="#info">Инфографика</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#008FA0] menuLink"
+          >
+            <a href="#jobs">Вакансии</a>
+          </li>
+          <li
+            class="cursor-pointer transition-all duration-300 hover:text-[#A78BFA] menuLink"
+          >
+            <a href="#events">Мероприятия</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      id="main"
+      class="dark:bg-[#1D1D1D] bg-white transition-all duration-500"
+    >
+      @include('partials/header.html')
+      <div class="mt-28 wrapper flex-center flex-col">
+        <div
+          class="flex items-center h-[66px] border-b-[2px] pb-2 border-b-[#E1E1E4] after:absolute after:top-[10px] after:right-0 after:h-4/6 after:w-[1px] after:bg-black/90 after:text-black after:content-[''] relative"
+        >
+          <svg class="h-[50px] w-[50px]">
+            <use xlink:href="img/sprite.svg#modal-search"></use>
+          </svg>
+          <!-- border-r-[1px] border-r-black/40 -->
+          <input
+            type="text"
+            class="px-2 ml-3 w-full max-w-[610px] font-inter font-medium text-5xl"
+            placeholder="Введите поисковый запрос"
+          />
+        </div>
+        <p class="mt-4 font-helvetica font-normal text-[16px] text-[#9799A5]">
+          Найдено 122 результата
+        </p>
+      </div>
+      @include('partials/searchCards.html') @include('partials/footer.html')
+
+      <!-- @include('html/h1.html') пример include -->
+    </div>
+  </body>
+</html>
