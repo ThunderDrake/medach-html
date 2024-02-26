@@ -5,12 +5,8 @@ document.addEventListener("DOMContentLoaded",() => {
 
   accordionButtons.forEach((button,i) => {
     button.addEventListener("click", () => {
-        const seeButton = button.childNodes[1] ? button.childNodes[1] : button.childNodes[0];
-        const unseeButton = button.childNodes[3] ? button.childNodes[3] : button.childNodes[2];
-
-        console.log(seeButton)
-        console.log(unseeButton)
-
+        const seeButton = button.childNodes[1].nodeName!=='#text' ? button.childNodes[1] : button.childNodes[0];
+        const unseeButton = (button.childNodes[3] && button.childNodes[3].nodeName!=='#text') ? button.childNodes[3] : button.childNodes[2];
       if(seeButton.classList.contains('opacity-0')){
         seeButton.classList.add('opacity-100');
         seeButton.classList.remove('opacity-0');
