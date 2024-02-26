@@ -68,6 +68,8 @@ const swiper2 = new Swiper('.mySwiper2', {
     prevEl: '#audio-prev',
   },
 });
+
+
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
 // AOS.init();

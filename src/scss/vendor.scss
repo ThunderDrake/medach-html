@@ -3,6 +3,66 @@
 // стили для модального окна
 @import "../../node_modules/graph-modal/dist/graph-modal.min";
 
+// стили для range слайдера
+@import '../../node_modules/nouislider/dist/nouislider';
+
+#dateslider{
+  height: 10px;
+  .noUi-connect {
+    background: #556583;
+  }
+  .noUi-connects{
+    background: #E1E1E4;
+    border:none;
+  }
+  .noUi-handle {
+    height: 26px;
+    width: 26px;
+    top: -10px;
+    right: -18px; /* half the width */
+    border-radius: 100%;
+    &::after{
+      display: none;
+    }
+    &::before{
+      display: none;
+    }
+  }
+  .noUi-tooltip {
+    border:none;
+    background: transparent ;
+  }
+
+}
+
+.noUi-horizontal .noUi-tooltip{
+  bottom:-150%;
+}
+
+#html5 {
+  height: 10px;
+  .noUi-connect {
+    background: #556583;
+  }
+  .noUi-connects{
+    background: #E1E1E4;
+    border:none;
+  }
+  .noUi-handle {
+    height: 26px;
+    width: 26px;
+    top: -10px;
+    right: -18px; /* half the width */
+    border-radius: 100%;
+    &::after{
+      display: none;
+    }
+    &::before{
+      display: none;
+    }
+  }
+}
+
 // стили для табов
 // @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
 

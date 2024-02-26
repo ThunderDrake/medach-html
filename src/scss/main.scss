@@ -9,6 +9,10 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+:root {
+	--ColorPrimaryDk: #193957;
+    --ColorPrimaryLt: #556583;
+}
 
 
 .burger {@include burger}

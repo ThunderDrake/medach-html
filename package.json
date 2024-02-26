@@ -63,6 +63,7 @@
     "graph-tabs": "^1.0.0",
     "inputmask": "^5.0.7",
     "just-validate": "^3.3.3",
+    "nouislider": "^15.7.1",
     "rellax": "^1.12.1",
     "simplebar": "^5.3.6",
     "smooth-scroll": "^16.1.3",

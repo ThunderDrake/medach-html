@@ -1,14 +1,16 @@
-<section id="search_cards" class="wrapper flex gap-8">
+<section id="search_cards" class="wrapper flex flex-col md:flex-row gap-8">
   @include('./filters.html')
   <div class="w-full flex flex-col">
-    <div class="flex flex-between">
+    <div class="flex flex-col gap-5 xs:gap-0 xs:flex-row xs:flex-between">
       <div class="flex gap-5 font-helvetica text-[#9799A5] w-full">
-        <p class="font-medium text-[#556583] border-b-[3px] border-b-[#556583]">
+        <div
+          class="font-medium text-[#556583] border-b-[3px] border-b-[#556583]"
+        >
           Сначала новые
-        </p>
-        <p>Сначала старые</p>
-        <p>Топ за месяц</p>
-        <p>Топ за год</p>
+        </div>
+        <div>Сначала старые</div>
+        <div>Топ за месяц</div>
+        <div>Топ за год</div>
       </div>
       <div class="flex flex-between w-full max-w-[300px]">
         <div class="font-helvetica">
@@ -31,7 +33,7 @@
         </button>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-8 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
       <div class="relative flex flex-col">
         <img src="./img/monkey.png" alt="top-material-img" />
         <div class="absolute left-4 top-4 flex flex-col font-helvetica">
@@ -925,7 +927,12 @@
         Показать еще
       </button>
       <div class="w-full flex-between mt-9">
-        <button class="text-[#556583] flex-center">В начало</button>
+        <button class="text-[#556583] xs:flex-center hidden xs:flex">
+          <svg class="w-6 h-6">
+            <use xlink:href="img/sprite.svg#two-arrows-left"></use>
+          </svg>
+          В начало
+        </button>
         <div class="w-full max-w-[400px] flex-between">
           <button class="text-[#556583] flex-center">
             <svg class="w-6 h-6">
@@ -942,7 +949,13 @@
             </svg>
           </button>
         </div>
-        <button class="text-[#556583]">В конец</button>
+        <button class="text-[#556583] xs:flex-center hidden xs:flex">
+          В конец
+
+          <svg class="w-6 h-6">
+            <use xlink:href="img/sprite.svg#two-arrows-right"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
