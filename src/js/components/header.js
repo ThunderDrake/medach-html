@@ -32,9 +32,13 @@ document.addEventListener("DOMContentLoaded",() => {
         nav.classList.add('opacity-100');
         main.classList.add('opacity-0');
         main.classList.remove('opacity-100');
-
+        document.querySelector('.leftside') && document.querySelector('.leftside').classList.add('opacity-0');
+        document.querySelector('.rightside') && document.querySelector('.rightside').classList.add('opacity-0');
 
         setTimeout(()=>{
+        document.querySelector('.leftside') && document.querySelector('.leftside').classList.add('hidden');
+        document.querySelector('.rightside') && document.querySelector('.rightside').classList.add('hidden');
+
           main.classList.remove('opacity-0');
           main.classList.add('opacity-100');
           main.className =mainOpenStyles;
@@ -46,8 +50,13 @@ document.addEventListener("DOMContentLoaded",() => {
         nav.classList.add('opacity-0');
         main.classList.add('opacity-0');
         main.classList.remove('opacity-100');
+        document.querySelector('.leftside') && document.querySelector('.leftside').classList.remove('opacity-0');
+        document.querySelector('.rightside') && document.querySelector('.rightside').classList.remove('opacity-0');
+
         setTimeout(()=>{
           nav.classList.add('hidden');
+          document.querySelector('.leftside') && document.querySelector('.leftside').classList.remove('hidden');
+          document.querySelector('.rightside') && document.querySelector('.rightside').classList.remove('hidden');
 
           main.classList.remove('opacity-0');
           main.classList.add('opacity-100');

@@ -64,8 +64,36 @@
 }
 
 // стили для табов
-// @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
+@import "../../node_modules/graph-tabs/dist/graph-tabs.min";
+.tabs__nav-btn{
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:9px 9px 0 0;
+  transition: all .3s linear;
+  &--active{
+  background: #323232 !important;
 
+  }
+}
+.tabs__nav-btn:focus{
+  background: #323232 !important;
+
+}
+.tabs__nav{
+  border-bottom: 1px #323232 solid;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center  ;
+}
+// .tabs__nav-item{
+//   margin-left: 15px;
+//   &:first-child{
+//     margin-left: 0;
+//   }
+// }
 // стили для библиотеки aos
 // @import "../../node_modules/aos/dist/aos";
 

@@ -1,8 +1,11 @@
 @mixin tabs {
   .tabs__nav-btn--active {
-    background-color: #ff0001;
+    color: #ff0001;
   }
-
+  .tabs__nav-btn{
+    width: 80px;
+    height: 50px;
+  }
   .tabs__panel {
     display: none;
   }

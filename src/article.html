@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru" class="page scroll-smooth">
+  @include('partials/head.html')
+
+  <body class="relative font-golos font-normal">
+    <div
+      id="navigation"
+      class="bg-[#242424] hidden h-screen fixed w-full overflow-hidden opacity-0 transition-all duration-500"
+    >
+      @include('partials/menuHeader.html')
+      <div class="text-white 3xl:ml-28 pt-4 md:pt-0 font-medium">
+        <ul
+          class="grid justify-items-center grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-3 3xl:flex 3xl:flex-col mt-10 3xl:mt-50"
+        >
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171] text-center 3xl:text-left menuLink"
+          >
+            <a href="#last_material">Последние материалы</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FDBA74] menuLink"
+          >
+            <a href="#top_material">Топ-Материалы</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#BFDBFE] menuLink"
+          >
+            <a href="#news">Новости</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F9A8D4] menuLink"
+          >
+            <a href="#articles">Статьи</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F81717] menuLink"
+          >
+            <a href="#video">Видео</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FFB800] menuLink"
+          >
+            <a href="#audio">Подкасты</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#77C845] menuLink"
+          >
+            <a href="#info">Инфографика</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#008FA0] menuLink"
+          >
+            <a href="#jobs">Вакансии</a>
+          </li>
+          <li
+            class="cursor-pointer transition-all duration-300 hover:text-[#A78BFA] menuLink"
+          >
+            <a href="#events">Мероприятия</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section
+      id="main"
+      class="dark:bg-[#1D1D1D] bg-[#FCFCFC] transition-all duration-500 section"
+    >
+      @include('partials/header.html')
+      <div id="start"></div>
+      <div class="mx-auto justify-center w-full flex gap-24 mt-24 relative">
+        @include('partials/leftSideArticle.html')
+
+        <div
+          class="flex flex-col mx-auto w-full !max-w-[800px] font-helvetica relative z-0 wrapper"
+        >
+          @include('partials/articleMobileSides.html')
+
+          <div class="flex-between">
+            <div
+              class="p-1 h-[30px] bg-[#D1ECC1] border-[#77C845] border-2 rounded-lg flex flex-center cursor-pointer"
+            >
+              <div
+                class="w-[10px] h-[10px] rounded-full bg-[#77C845] m-0 mr-1 p-0"
+              ></div>
+              Инфографика
+            </div>
+            <div class="flex">
+              <div
+                class="bg-white rounded-full h-10 w-10 flex-center shadow-md cursor-pointer hover:bg-black/5 transition-all duration-500"
+              >
+                <svg class="w-8 h-8">
+                  <use xlink:href="img/sprite.svg#share"></use>
+                </svg>
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-10 flex-center shadow-md ml-3 cursor-pointer hover:bg-black/5 transition-all duration-500"
+              >
+                <svg class="w-8 h-8">
+                  <use xlink:href="img/sprite.svg#save"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h1
+            class="mt-4 font-helvetica text-5xl text-black/80 font-medium lg:max-w-[700px] leading-[58px]"
+          >
+            В роговице обнаружены патрульные Т-лимфоциты
+          </h1>
+          <p class="my-8 text-[#5F626F]">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <div class="w-full relative z-0">
+            <img src="./img/man-in-glass.png" alt="man-in-glass" />
+            <div
+              class="w-8 h-8 rounded-full bg-white hover:bg-white/70 transition-all duration-500 drop-shadow-md absolute top-3 right-3 flex-center z-10"
+            >
+              <svg class="w-4 h-4">
+                <use xlink:href="img/sprite.svg#expand"></use>
+              </svg>
+            </div>
+          </div>
+          <p class="mt-8 mb-16 text-[#5F626F] italic font-light">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <h2 class="font-medium text-3xl leading-10 text-black/80 mb-5">
+            Британские ученые опять что-то доказали
+          </h2>
+          <div class="text-[#5F626F] text-xl mb-12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
+            porttitor urna. In gravida, orci vel pretium lobortis, lorem purus
+            auctor mauris, in sollicitudin orci enim vel enim. Integer consequat
+            ex id tortor molestie accumsan. Quisque egestas, mi sed porta
+            auctor, turpis sapien dignissim purus, et volutpat urna lorem
+            blandit lectus. Nunc id risus vitae nisi hendrerit accumsan vel
+            viverra mauris. Nullam sit amet magna sit amet risus accumsan
+            sagittis id vitae neque. Лиофилизация
+            <div class="inline relative">
+              <svg class="w-6 h-6 inline cursor-pointer peer z-50">
+                <use xlink:href="img/sprite.svg#warning"></use>
+              </svg>
+              <div
+                class="absolute top-8 right-0 translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-40 opacity-0 peer-hover:opacity-100 transition-all duration-500"
+              >
+                Лиофилиза́ция — способ мягкой сушки веществ, при котором
+                высушиваемый препарат замораживается, а потом помещается в
+                вакуумную камеру.
+              </div>
+            </div>
+            a odio vehicula, iaculis ligula ut, consectetur orci. Etiam accumsan
+            consequat tellus ut feugiat
+          </div>
+          <h2 class="font-medium text-3xl leading-10 text-black/80 mb-5">
+            Лимфоциты на страже здоровья глаз
+          </h2>
+          <div class="text-[#5F626F] text-xl mb-11">
+            Praesent ultricies lacus in ligula volutpat feugiat. In hac
+            habitasse platea dictumst. In hac habitasse platea dictumst. Fusce
+            luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras
+            ultricies, elit sit amet cursus consectetur, risus felis ullamcorper
+            nulla, ut scelerisque sapien lorem non sem. Integer vestibulum
+            ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo
+            malesuada purus a mollis.
+            <div class="inline relative">
+              <svg class="w-6 h-6 inline cursor-pointer peer z-10">
+                <use xlink:href="img/sprite.svg#warning"></use>
+              </svg>
+              <div
+                class="absolute top-8 right-0 md:translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-0 opacity-0 peer-hover:opacity-100 transition-all peer-hover:z-50 duration-500"
+              >
+                Лиофилиза́ция — способ мягкой сушки веществ, при котором
+                высушиваемый препарат замораживается, а потом помещается в
+                вакуумную камеру.
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#F3F7FF] rounded-xl p-6 box-border">
+            <div
+              class="flex flex-col lg:flex-row items-center lg:flex-between mb-12"
+            >
+              <p class="text-black/80 text-xl font-medium mb-3 lg:mb-0">
+                Рисунок 1. Данные исследования
+              </p>
+              <div class="flex">
+                <button
+                  class="mr-3 h-12 w-32 bg-[#556583] cursor-pointer border-none text-white text-xl rounded-lg hover:bg-white hover:text-[#556583] hover:border hover:border-solid hover:border-[#556583] transition-all duration-300 z-40"
+                >
+                  Открыть
+                </button>
+                <button
+                  class="h-12 w-32 text-[#556583] border-[1px] border-[#556583] text-xl rounded-lg hover:bg-[#556583] hover:text-white hover:border-none transition-all duration-300"
+                >
+                  Свернуть
+                </button>
+              </div>
+            </div>
+            <img src="./img/stat.png" alt="statistics" />
+          </div>
+          <p class="mt-14 text-[#5F626F] text-xl mb-6">
+            Praesent ultricies lacus in ligula volutpat feugiat. In hac
+            habitasse platea dictumst. In hac habitasse platea dictumst. Fusce
+            luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras
+            ultricies, elit sit amet cursus consectetur, risus felis ullamcorper
+            nulla, ut scelerisque sapien lorem non sem. Integer vestibulum
+            ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo
+            malesuada purus a mollis.
+          </p>
+          <div class="text-[#5F626F] text-xl mb-6">
+            Vestibulum pulvinar aliquam libero eu consequat. Cras massa orci,
+            ultrices sed scelerisque id, semper vel neque. Proin a turpis quis
+            nibh cursus hendrerit sit amet vel libero. Nullam sit amet laoreet
+            ante. Mauris sit
+            <div class="inline relative">
+              <svg class="w-6 h-6 inline cursor-pointer peer z-10">
+                <use xlink:href="img/sprite.svg#warning"></use>
+              </svg>
+              <div
+                class="absolute top-8 right-0 md:translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-0 opacity-0 peer-hover:opacity-100 transition-all duration-500"
+              >
+                Лиофилиза́ция — способ мягкой сушки веществ, при котором
+                высушиваемый препарат замораживается, а потом помещается в
+                вакуумную камеру.
+              </div>
+            </div>
+            amet mi vitae arcu dignissim porttitor et in arcu. Nullam eleifend
+            molestie arcu, pretium fermentum orci feugiat eget.
+          </div>
+          <p class="text-[#5F626F] text-xl mb-11">
+            Integer dapibus tincidunt ipsum, at rutrum magna rutrum at. Quisque
+            pretium convallis vestibulum.
+          </p>
+          <h2 class="font-medium text-3xl leading-10 text-black/80 mb-5">
+            Роговица в ежовых рукавицах
+          </h2>
+          <div class="text-[#5F626F] text-xl mb-6">
+            Praesent ultricies lacus in ligula volutpat feugiat. In hac
+            habitasse platea dictumst. In hac habitasse platea dictumst. Fusce
+            luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras
+            ultricies, elit sit amet cursus consectetur, risus felis ullamcorper
+            nulla, ut scelerisque sapien lorem non sem. Integer vestibulum
+            ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo
+            malesuada purus a mollis. Integer dapibus tincidunt ipsum, at rutrum
+            magna rutrum at. Quisque pretium convallis vestibulum
+            <div class="inline relative">
+              <svg class="w-6 h-6 inline cursor-pointer peer z-10">
+                <use xlink:href="img/sprite.svg#warning"></use>
+              </svg>
+              <div
+                class="absolute top-8 right-0 md:translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-0 opacity-0 peer-hover:opacity-100 transition-all duration-500"
+              >
+                Лиофилиза́ция — способ мягкой сушки веществ, при котором
+                высушиваемый препарат замораживается, а потом помещается в
+                вакуумную камеру.
+              </div>
+            </div>
+          </div>
+        </div>
+        @include('partials/rightSideArticle.html')
+      </div>
+      <div class="mt-40 bg-[#F4F4F4]"></div>
+      @include('partials/searchModal.html') @include('partials/footer.html')
+    </section>
+  </body>
+</html>
