@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded",() => {
   accordionButtons.forEach((button,i) => {
     button.addEventListener("click", () => {
         console.log('test ver')
-      if(button.childNodes[1].classList.contains('opacity-0')){
-        button.childNodes[1].classList.add('opacity-100');
-        button.childNodes[1].classList.remove('opacity-0');
+      if(button.childNodes[0].classList.contains('opacity-0')){
+        button.childNodes[0].classList.add('opacity-100');
+        button.childNodes[0].classList.remove('opacity-0');
         button.childNodes[3].classList.add('opacity-0');
         button.childNodes[3].classList.remove('opacity-100');
         setTimeout(()=>{
-          button.childNodes[1].classList.remove('hidden');
+          button.childNodes[0].classList.remove('hidden');
           button.childNodes[3].classList.add('hidden');
         },500)
       }else{
-        button.childNodes[1].classList.add('opacity-0');
-        button.childNodes[1].classList.remove('opacity-100');
+        button.childNodes[0].classList.add('opacity-0');
+        button.childNodes[0].classList.remove('opacity-100');
         button.childNodes[3].classList.remove('opacity-0');
         button.childNodes[3].classList.add('opacity-100');
         setTimeout(()=>{
-          button.childNodes[1].classList.add('hidden');
+          button.childNodes[0].classList.add('hidden');
           button.childNodes[3].classList.remove('hidden');
         },500)
       }
