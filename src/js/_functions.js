@@ -31,7 +31,15 @@ import { burger } from './functions/burger';
 
 // Реализация модального окна
 import GraphModal from 'graph-modal';
-const modal = new GraphModal();
+// document.querySelector('.btn-search').addEventListener('click', () => {
+// 	new GraphModal().open('search');
+// });
+// document.querySelector('.btn-sidebar').addEventListener('click', () => {
+// 	new GraphModal().open('articles');
+// });
+const modal = new GraphModal('search');
+const modal2 = new GraphModal('articles');
+
 
 // Реализация табов
 import GraphTabs from 'graph-tabs';
@@ -56,7 +64,7 @@ import Swiper, { Navigation } from 'swiper';
 Swiper.use([Navigation]);
 const swiper = new Swiper('.mySwiper', {
   speed: 400,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   navigation: {
     nextEl: '#video-next',
     prevEl: '#video-prev',
@@ -64,13 +72,19 @@ const swiper = new Swiper('.mySwiper', {
 });
 const swiper2 = new Swiper('.mySwiper2', {
   speed: 400,
-  slidesPerView: '1',
+  slidesPerView: 1,
   navigation: {
     nextEl: '#audio-next',
     prevEl: '#audio-prev',
   },
 });
-
+const swiper3 = new Swiper(".mySwiper-grid", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '#article-next',
+    prevEl: '#article-prev',
+  },
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

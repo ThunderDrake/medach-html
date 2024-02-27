@@ -75,13 +75,15 @@
   transition: all .3s linear;
   &--active{
   background: #323232 !important;
-
+  }
+  &:focus{
+    background: #323232 !important;
+  }
+  &:hover{
+    background: #323232 !important;
   }
 }
-.tabs__nav-btn:focus{
-  background: #323232 !important;
 
-}
 .tabs__nav{
   border-bottom: 1px #323232 solid;
   display: flex;
@@ -100,15 +102,18 @@
 // // стили для свайпера
 @import "../../node_modules/swiper/swiper-bundle.min";
 
-.swiper-wrapper{
+.swiper-wrapper-main{
   width: 100%;
   max-width: 800px;
+}
+.swaper-wrapper{
+  width: 100%;
 }
 .swiper-wrapper-audio{
   width: 100% !important;
   max-width: 400px !important;
 }
-.swiper-button-prev{
+.swiper-button-prev-main{
   left: 0;
   top: auto ;
   bottom: 0;
@@ -116,7 +121,7 @@
   color: #323232;
 
 }
-.swiper-button-next{
+.swiper-button-next-main{
   right: 0;
   top: auto ;
   bottom: -0px;
@@ -124,18 +129,40 @@
   color: #323232;
 
 }
+
 .swiper-slide-audio{
   width: 100%;
   max-width: 800px;
 }
+// #article-next {
+//   background-image: url(./next.svg);
+//   background-repeat: no-repeat;
+//   background-size: 100% auto;
+//   background-position: center;
+// }
+
+#article-next::after {
+  content: '→';
+  color:#323232;
+  font-weight: 500;
+
+  // display: none;
+}
+#article-prev::after {
+  content: '←';
+  color:#323232;
+  font-weight: 500;
+
+  // display: none;
+}
 @media (min-width:1200px) {
-  .swiper-button-prev{
+  .swiper-button-prev-main{
     left: 105px;
     top: 50%;
     bottom: auto;
     z-index: 55;
   }
-  .swiper-button-next{
+  .swiper-button-next-main{
     right: 105px;
     top: 50%;
     bottom: auto;
