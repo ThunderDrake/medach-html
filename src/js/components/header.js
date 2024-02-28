@@ -6,6 +6,17 @@ document.addEventListener("DOMContentLoaded",() => {
   const mainOpenStyles = 'dark:bg-[#1D1D1D] bg-white transition-all duration-500 absolute top-96 md:top-64 xl:top-80 3xl:top-32 z-50 right-0 3xl:right-5 w-full 3xl:w-fit opacity-100';
   const mainDefaultStyles = 'dark:bg-[#1D1D1D] bg-white transition-all duration-500 opacity-100'
   const menuLinks = document.querySelectorAll('.menuLink');
+  const currentUrl = window.location.href;
+  const isProfilePage = currentUrl.split('/').find((item)=>item==='account.html');
+  if(isProfilePage&& isProfilePage.length > 0) {
+    console.log(document.querySelector('.profile-page'))
+    document.querySelector('.profile-page').classList.remove('bg-transparent');
+    document.querySelector('.profile-page').classList.remove('bg-[#E5E5E5]');
+
+    document.querySelector('.profile-page').classList.add('bg-[#556583]/60');
+    console.log(document.querySelector('.profile-page'))
+
+  }
   themeSwitcher.forEach((button)=>{
     button.addEventListener('click', () => {
       document.body.classList.toggle('dark');

@@ -37,14 +37,20 @@ import GraphModal from 'graph-modal';
 // document.querySelector('.btn-sidebar').addEventListener('click', () => {
 // 	new GraphModal().open('articles');
 // });
-const modal = new GraphModal('search');
-const modal2 = new GraphModal('articles');
+
+  const modal = new GraphModal('search');
+  const modal2 = new GraphModal('articles');
+
 
 
 // Реализация табов
 import GraphTabs from 'graph-tabs';
+const currentUrl = window.location.href;
+const isProfilePage = currentUrl.split('/').find((item)=>item==='article.html');
+if(isProfilePage&& isProfilePage.length > 0) {
 const tabs = new GraphTabs('tab');
 const tabs2 = new GraphTabs('tab2');
+}
 
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)

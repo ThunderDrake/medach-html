@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru" class="page scroll-smooth">
+  @include('partials/head.html')
+
+  <body class="relative font-golos font-normal">
+    <div
+      id="navigation"
+      class="bg-[#242424] hidden h-screen fixed w-full overflow-hidden opacity-0 transition-all duration-500"
+    >
+      @include('partials/menuHeader.html')
+      <div class="text-white 3xl:ml-28 pt-4 md:pt-0 font-medium">
+        <ul
+          class="grid justify-items-center grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-3 3xl:flex 3xl:flex-col mt-10 3xl:mt-50"
+        >
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F87171] text-center 3xl:text-left menuLink"
+          >
+            <a href="#last_material">Последние материалы</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FDBA74] menuLink"
+          >
+            <a href="#top_material">Топ-Материалы</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#BFDBFE] menuLink"
+          >
+            <a href="#news">Новости</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F9A8D4] menuLink"
+          >
+            <a href="#articles">Статьи</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#F81717] menuLink"
+          >
+            <a href="#video">Видео</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#FFB800] menuLink"
+          >
+            <a href="#audio">Подкасты</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#77C845] menuLink"
+          >
+            <a href="#info">Инфографика</a>
+          </li>
+          <li
+            class="xl:mb-8 cursor-pointer transition-all duration-300 hover:text-[#008FA0] menuLink"
+          >
+            <a href="#jobs">Вакансии</a>
+          </li>
+          <li
+            class="cursor-pointer transition-all duration-300 hover:text-[#A78BFA] menuLink"
+          >
+            <a href="#events">Мероприятия</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section
+      id="main"
+      class="dark:bg-[#1D1D1D] bg-white transition-all duration-500"
+    >
+      @include('partials/header.html')
+      <div class="wrapper font-helvetica">
+        <img
+          src="./img/profile.png"
+          alt="user icon"
+          class="w-24 h-24 mb-4 rounded-full"
+        />
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+          <div class="flex flex-col">
+            <div class="flex flex-col">
+              <h2 class="font-medium text-[#323232] text-[32px]">
+                Имя Фамилия
+              </h2>
+              <p class="italic text-lg text-[#9799A5]">25.10.1998</p>
+              <div
+                class="flex flex-col xs:flex-row xs:items-center text-[#5F626F] text-xl mt-6"
+              >
+                emailexample@exmple.com
+                <button
+                  class="text-left flex items-center p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] w-fit border-[ #D1ECC1] hover:bg-[#D1ECC1]/80 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                >
+                  изменить личные данные
+                  <svg class="ml-1 h-2 w-2">
+                    <use xlink:href="img/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6">
+                <h2 class="font-medium text-[#323232] text-[32px]">
+                  Место работы:
+                </h2>
+                <p class="text-[#5F626F] text-xl p-0 mt-2">Procter&Gamble</p>
+              </div>
+              <div class="mt-6">
+                <h2 class="font-medium text-[#323232] text-[32px]">
+                  Облать Интересов:
+                </h2>
+                <div class="grid grid-cols-3 gap-2">
+                  <div
+                    class="flex items-center justify-center group p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] border-[ #D1ECC1] hover:bg-[#FA8C85]/30 hover:border-[#FA8C85] transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                  >
+                    Кардиология
+                    <button>
+                      <svg class="ml-2 h-3 w-3 group-hover:hidden">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <svg class="ml-2 h-3 w-3 hidden group-hover:block">
+                        <use xlink:href="img/sprite.svg#red-exit"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="flex items-center justify-center group p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] border-[ #D1ECC1] hover:bg-[#FA8C85]/30 hover:border-[#FA8C85] transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                  >
+                    Кардиология
+                    <button>
+                      <svg class="ml-2 h-3 w-3 group-hover:hidden">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <svg class="ml-2 h-3 w-3 hidden group-hover:block">
+                        <use xlink:href="img/sprite.svg#red-exit"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="flex items-center justify-center group p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] border-[ #D1ECC1] hover:bg-[#FA8C85]/30 hover:border-[#FA8C85] transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                  >
+                    Кардиология
+                    <button>
+                      <svg class="ml-2 h-3 w-3 group-hover:hidden">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <svg class="ml-2 h-3 w-3 hidden group-hover:block">
+                        <use xlink:href="img/sprite.svg#red-exit"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="flex items-center justify-center group p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] border-[ #D1ECC1] hover:bg-[#FA8C85]/30 hover:border-[#FA8C85] transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                  >
+                    Кардиология
+                    <button>
+                      <svg class="ml-2 h-3 w-3 group-hover:hidden">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <svg class="ml-2 h-3 w-3 hidden group-hover:block">
+                        <use xlink:href="img/sprite.svg#red-exit"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    class="flex items-center justify-center group p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] border-[ #D1ECC1] hover:bg-[#FA8C85]/30 hover:border-[#FA8C85] transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                  >
+                    Кардиология
+                    <button>
+                      <svg class="ml-2 h-3 w-3 group-hover:hidden">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                      <svg class="ml-2 h-3 w-3 hidden group-hover:block">
+                        <use xlink:href="img/sprite.svg#red-exit"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex items-center">
+                    <button
+                      class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500"
+                    >
+                      <svg class="h-2 w-2">
+                        <use xlink:href="img/sprite.svg#plus"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6">
+                <h2 class="font-medium text-[#323232] text-[32px]">О себе:</h2>
+                <p class="text-[#5F626F] text-xl p-0 mt-2">
+                  Praesent ultricies lacus in ligula volutpat feugiat. In hac
+                  habitasse platea dictumst. In hac habitasse platea dictumst.
+                </p>
+              </div>
+              <button
+                class="mt-6 p-0 font-medium text-[32px] flex items-center text-[#F98C85] hover:text-[#d0726b] transition-all duration-500"
+              >
+                Выйти из аккаунта
+                <svg class="h-5 w-4 ml-[10px]">
+                  <use xlink:href="img/sprite.svg#logout"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <h2 class="font-medium text-[#323232] text-[32px] p-0">
+                Квалификация
+              </h2>
+              <div
+                class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
+              >
+                <svg class="h-2 w-2">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+                <div
+                  class="h-10 italic text-lg text-[#9799A5] absolute w-[250px] bg-white border-[1px] border-[#323232] rounded-md -bottom-12 lg:-left-4 hidden group-hover:flex-center"
+                >
+                  Добавить Квалификацию?
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-col gap-6">
+              <div
+                class="flex-center h-14 rounded-[10px] p-2 xxs:pl-7 xxs:pr-4 w-fit bg-[#D1ECC1]/30 border-[1px] border-[#D1ECC1] text-[#639942] text-xl"
+              >
+                Дипломированный Врач
+                <button
+                  class="flex items-center p-1 ml-6 bg-[#B3DF98] rounded-md border-[1px] w-fit border-[ #B3DF98] hover:bg-[#B3DF98]/60 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                >
+                  изменить
+                  <svg class="ml-1 h-2 w-2">
+                    <use xlink:href="img/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+                <div
+                  class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
+                >
+                  <svg class="h-4 w-4">
+                    <use xlink:href="img/sprite.svg#question"></use>
+                  </svg>
+                  <div
+                    class="h-24 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#B3DF98] rounded-md -bottom-[102px] right-0 xs:right-auto lg:-left-4 hidden group-hover:flex group-hover:z-50 itemc-center flex-col xs:pl-6"
+                  >
+                    <p class="text-[#9799A5]">
+                      Благодоря этому навыку вы открыли
+                    </p>
+                    <p class="text-[#639942]">Доступ к редактору</p>
+                    <p class="text-[#639942]">достук к персонализации</p>
+                  </div>
+                </div>
+              </div>
+              <!-- flex-col xxxs:flex-row  w-full xxxs:-->
+              <div
+                class="flex-center rounded-[10px] p-2 xxs:pl-7 xxs:pr-4 h-14 w-fit bg-[#D1ECC1]/30 border-[1px] border-[#D1ECC1] text-[#639942] text-xl"
+              >
+                Сертифицированный Специалист
+                <button
+                  class="flex items-center p-1 ml-6 bg-[#B3DF98] rounded-md border-[1px] w-fit border-[ #B3DF98] hover:bg-[#B3DF98]/60 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                >
+                  изменить
+                  <svg class="ml-1 h-2 w-2">
+                    <use xlink:href="img/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+                <div
+                  class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
+                >
+                  <svg class="h-4 w-4">
+                    <use xlink:href="img/sprite.svg#question"></use>
+                  </svg>
+                  <div
+                    class="h-24 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#B3DF98] rounded-md -bottom-[102px] right-0 xs:right-auto lg:-left-4 hidden group-hover:z-50 group-hover:flex itemc-center flex-col xs:pl-6"
+                  >
+                    <p class="text-[#9799A5]">
+                      Благодоря этому навыку вы открыли
+                    </p>
+                    <p class="text-[#639942]">Доступ к редактору</p>
+                    <p class="text-[#639942]">достук к персонализации</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-center p-2 xxs:pl-7 xxs:pr-4 h-14 rounded-[10px] w-fit bg-[#D1ECC1]/30 border-[1px] border-[#D1ECC1] text-[#639942] text-xl"
+              >
+                Кандидат Наук
+                <button
+                  class="flex items-center p-1 ml-6 bg-[#B3DF98] rounded-md border-[1px] w-fit border-[ #B3DF98] hover:bg-[#B3DF98]/60 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                >
+                  изменить
+                  <svg class="ml-1 h-2 w-2">
+                    <use xlink:href="img/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+                <div
+                  class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
+                >
+                  <svg class="h-4 w-4">
+                    <use xlink:href="img/sprite.svg#question"></use>
+                  </svg>
+                  <div
+                    class="h-24 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#B3DF98] rounded-md -bottom-[102px] right-0 xs:right-auto lg:-left-4 hidden group-hover:flex group-hover:z-50 itemc-center flex-col xs:pl-6"
+                  >
+                    <p class="text-[#9799A5]">
+                      Благодоря этому навыку вы открыли
+                    </p>
+                    <p class="text-[#639942]">Доступ к редактору</p>
+                    <p class="text-[#639942]">достук к персонализации</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-center p-2 xxs:pl-7 xxs:pr-4 h-14 rounded-[10px] w-fit bg-[#FDE68A]/30 border-[1px] border-[#FDE68A] text-[#D8B012] text-xl"
+              >
+                Лицензированный Специалист
+                <button
+                  class="flex items-center p-1 ml-6 bg-[#FDE68A] rounded-md border-[1px] w-fit border-[ #FDE68A] hover:bg-[#FDE68A]/60 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                >
+                  изменить
+                  <svg class="ml-1 h-2 w-2">
+                    <use xlink:href="img/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+                <div
+                  class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
+                >
+                  <svg class="h-4 w-4">
+                    <use xlink:href="img/sprite.svg#question"></use>
+                  </svg>
+                  <div
+                    class="h-24 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#FDE68A] rounded-md -bottom-[102px] right-0 xs:right-auto lg:-left-4 hidden group-hover:flex group-hover:z-50 itemc-center flex-col xs:pl-6"
+                  >
+                    <p class="text-[#9799A5]">
+                      Благодоря этому навыку вы открыли
+                    </p>
+                    <p class="text-[#636363]">Доступ к редактору</p>
+                    <p class="text-[#636363]">достук к персонализации</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 xxxs:grid-cols-2 xs:grid-cols-2 xl:grid-cols-1 gap-5 xl:place-items-end"
+          >
+            <button
+              class="w-40 h-40 flex flex-col bg-[#556583] text-white hover:bg-[#5E6574] transition-all duration-500 p-1 rounded-md"
+            >
+              <div class="flex w-full justify-end">
+                <div
+                  class="text-xs font-inter flex-center w-4 h-4 rounded-full border-white border-[1px]"
+                >
+                  ?
+                </div>
+              </div>
+              <div class="w-full flex flex-center text-lg font-bold mt-2">
+                Режим автора
+              </div>
+              <div class="flex-center w-full mt-[10px]">
+                <img
+                  class="w-16 h-16"
+                  src="./img/author.png"
+                  alt="Режим Автора"
+                />
+              </div>
+            </button>
+            <button
+              class="w-40 h-40 flex flex-col bg-[#556583] text-white hover:bg-[#5E6574] transition-all duration-500 p-1 rounded-md"
+            >
+              <div class="flex w-full justify-end">
+                <div
+                  class="text-xs font-inter flex-center w-4 h-4 rounded-full border-white border-[1px]"
+                >
+                  ?
+                </div>
+              </div>
+              <div class="w-full flex flex-center text-lg font-bold mt-2">
+                Сохраненное
+              </div>
+              <div class="flex-center w-full mt-[10px]">
+                <img class="w-16 h-16" src="./img/save.png" alt="Сохраненное" />
+              </div>
+            </button>
+            <button
+              class="w-40 h-40 flex flex-col bg-[#5E6574] text-white hover:bg-[#556583] transition-all duration-500 p-1 rounded-md"
+            >
+              <div class="flex w-full justify-end">
+                <div
+                  class="text-xs font-inter flex-center w-4 h-4 rounded-full border-white border-[1px]"
+                >
+                  ?
+                </div>
+              </div>
+              <div class="w-full flex flex-center text-lg font-bold mt-2">
+                Настройки
+              </div>
+              <div class="flex-center w-full mt-[10px]">
+                <img
+                  class="w-16 h-16"
+                  src="./img/settings.png"
+                  alt="Настройки"
+                />
+              </div>
+            </button>
+            <button
+              class="w-40 h-40 flex flex-col bg-[#5E6574] text-white hover:bg-[#556583] transition-all duration-500 p-1 rounded-md"
+            >
+              <div class="flex w-full justify-end">
+                <div
+                  class="text-xs font-inter flex-center w-4 h-4 rounded-full border-white border-[1px]"
+                >
+                  ?
+                </div>
+              </div>
+              <div class="w-full flex flex-center text-lg font-bold mt-2">
+                Персонализации
+              </div>
+              <div class="flex-center w-full mt-[10px]">
+                <img
+                  class="w-16 h-16"
+                  src="./img/palette.png"
+                  alt="Персонализации"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      @include('partials/searchModal.html') @include('partials/footer.html')
+    </section>
+  </body>
+</html>
