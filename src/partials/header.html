@@ -1,65 +1,82 @@
 <header
   class="header-wrapper h-[92px] grid grid-cols-3 justify-items-center items-center"
 >
-  <nav class="flex items-center justify-start md:ml-20">
-    <button
-      class="btn-reset burger text-white"
-      aria-label="Открыть меню"
-      aria-expanded="false"
-      data-burger
-    >
-      <span class="burger__line"></span>
-    </button>
-    <ul class="ml-5 hidden lg:flex">
-      <li class="text-default mr-5">
-        <a href="#news" class="hover:text-black transition-all duration-500"
-          >Новости</a
-        >
-      </li>
-      <li class="text-default mr-5">
-        <a href="#articles" class="hover:text-black transition-all duration-500"
-          >Статьи</a
-        >
-      </li>
-      <li class="text-default mr-5">
-        <a href="#events" class="hover:text-black transition-all duration-500"
-          >Мероприятия</a
-        >
-      </li>
-      <li class="text-default">
-        <a href="#jobs" class="hover:text-black transition-all duration-500"
-          >Вакансии</a
-        >
-      </li>
-    </ul>
-  </nav>
-  <div>
-    <img
-      src="../img/logo.png"
-      alt="src"
-      class="dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"
-    />
+  <div class="w-full flex justify-start">
+    <nav class="flex items-center justify-start">
+      <button
+        class="btn-reset burger text-white"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+      <ul class="ml-5 hidden lg:flex text-[19px]">
+        <li class="mr-5">
+          <a
+            href="#news"
+            class="hover:text-black transition-all duration-500 hover:underline"
+            >Новости</a
+          >
+        </li>
+        <li class="mr-5">
+          <a
+            href="#articles"
+            class="hover:text-black transition-all duration-500 hover:underline"
+            >Статьи</a
+          >
+        </li>
+        <li class="mr-5">
+          <a
+            href="#events"
+            class="hover:text-black transition-all duration-500 hover:underline"
+            >Мероприятия</a
+          >
+        </li>
+        <li class="">
+          <a
+            href="#jobs"
+            class="hover:text-black transition-all duration-500 hover:underline"
+            >Вакансии</a
+          >
+        </li>
+      </ul>
+    </nav>
   </div>
-  <div class="hidden md:flex items-center cursor-pointer">
-    <button class="btn-reset btn-search" data-graph-path="search">
-      <svg
-        class="w-6 h-6 bg-transparent dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"
+  <div>
+    <a href="../index.html">
+      <img
+        src="../img/logo.png"
+        alt="src"
+        class="dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"
+      />
+    </a>
+  </div>
+  <div class="w-full flex justify-end">
+    <div class="hidden md:flex items-center cursor-pointer">
+      <button
+        class="btn-reset btn-search header-search"
+        data-graph-path="search"
       >
-        <use href="../img/sprite.svg#search"></use>
-      </svg>
-    </button>
-    <button class="themeSwitcher mx-16">
-      <svg
-        class="w-6 h-6 bg-transparent cursor-pointer dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"
-      >
-        <use href="../img/sprite.svg#light-mode"></use>
-      </svg>
-    </button>
+        <svg
+          class="w-6 h-6 bg-transparent dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"
+        >
+          <use href="../img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <button class="themeSwitcher mx-16">
+        <svg
+          class="w-6 h-6 bg-transparent cursor-pointer dark:w-8 dark:h-8 dark:bg-white dark:p-1 dark:dark:border-[##E5E5E5] dark:rounded-md"
+        >
+          <use href="../img/sprite.svg#light-mode"></use>
+        </svg>
+      </button>
 
-    <svg
-      class="w-8 h-8 bg-transparent bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer profile-page"
-    >
-      <use href="../img/sprite.svg#user"></use>
-    </svg>
+      <svg
+        class="w-8 h-8 bg-transparent bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer profile-page"
+      >
+        <use href="../img/sprite.svg#user"></use>
+      </svg>
+    </div>
   </div>
 </header>

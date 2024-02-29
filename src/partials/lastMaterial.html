@@ -1,7 +1,7 @@
 <section id="last_material" class="mt-40 wrapper">
   <div class="w-full flex items-center flex-wrap xs:flex-nowrap relative">
     <div
-      class="w-[20px] h-[20px] rounded-full bg-[#F87171] absolute -left-10"
+      class="w-[20px] h-[20px] rounded-full bg-[#F87171] hidden lg:block absolute -left-[29px] xl:-left-10"
     ></div>
     <h2 class="title xs:whitespace-nowrap">Последние Материалы</h2>
     <span
@@ -19,20 +19,18 @@
     </button>
   </div>
   <div
-    class="accordion-content grid grid-cols-1 lg:grid-cols-2 overflow-hidden lg:overflow-visible gap-16 transition-all duration-700 ease-in-out grid-rows-[1fr] opacity-100 relative"
+    class="accordion-content grid grid-cols-1 lg:grid-cols-2 overflow-hidden lg:overflow-visible gap-0 lg:gap-5 xl:gap-24 transition-all duration-700 ease-in-out grid-rows-[1fr] opacity-100 relative"
   >
     <div
-      class="w-[2px] h-[122%] bg-linear-red-yellow hidden lg:block absolute -left-[30px] -top-7 z-[999]"
+      class="w-[2px] lg:h-[118%] lg-xl:h-[120%] 2xl:h-[123%] bg-linear-red-yellow hidden lg:block absolute lg:-left-[20px] xl:-left-[30px] -top-7 z-[999]"
     ></div>
     <div class="flex flex-col overflow-hidden">
       <p class="mt-3 text-base text-[#9CA3AF]">
         Выбранные Тэги для данной категории материала
       </p>
-      <div
-        class="grid text-[#9799A5] mt-3 gap-2 grid-cols-3 xs:grid-cols-4 2xl:grid-cols-5"
-      >
+      <div class="flex text-[#9799A5] mt-3 flex-wrap gap-4">
         <p
-          class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
         >
           Биология
         </p>
@@ -42,12 +40,12 @@
           Фармакология
         </p>
         <p
-          class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center font-helvetica"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center font-helvetica"
         >
           Психология
         </p>
         <p
-          class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
         >
           Энтомология
         </p>
@@ -60,25 +58,27 @@
       </div>
       <div class="mt-8 relative flex flex-col">
         <img src="./img/post.png" alt="medic" />
-        <div class="absolute left-1 top-1 flex">
+        <div class="absolute left-1 top-1 flex gap-[6px]">
           <div
-            class="p-1 h-[30px] w-[90px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+            class="px-2 h-[30px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
           >
             <div
-              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-1 p-0"
+              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-2 p-0"
             ></div>
             Статья
           </div>
           <div
-            class="p-1 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer ml-1 font-helvetica"
+            class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
           >
-            <svg class="w-[10px] h-[10px]">
-              <use xlink:href="img/sprite.svg#redaction-darkmode"></use>
-            </svg>
+            <img
+              class="w-[18px] h-[16px] bg-white mr-[5px]"
+              src="../img/svg/redaction-dark.svg"
+              alt="redaction choice"
+            />
             Выбор Редакции
           </div>
         </div>
-        <h3 class="font-semibold text-[27px] text-[#323232] mt-5 font-semibold">
+        <h3 class="font-semibold text-[27px] text-[#323232] mt-5">
           CAR-T-клетки как краеугольный камень в терапии рака простаты
         </h3>
         <p class="text-[#52525B] text-lg">
@@ -91,39 +91,37 @@
         </p>
         <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
           Автор: Константин константинов
-          <span class="flex items-center font-inter">
+          <span class="flex items-center text-[12px] xl:text-[17px] font-inter">
             28.06.2022 | 192
-            <svg class="w-[15px] h-[15px]">
+            <svg class="w-[15px] text-[12px] xl:text-[17px] h-[15px]">
               <use xlink:href="img/sprite.svg#see"></use>
             </svg>
 
             | 1600 слов
           </span>
-          <div
-            class="text-[#9799A5] mt-3 gap-2 grid grid-cols-3 xs:grid-cols-5"
-          >
+          <div class="text-[#9799A5] mt-3 gap-2 flex flex-wrap">
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
@@ -134,15 +132,19 @@
     <div
       class="flex items-center lg:items-start justify-center flex-col overflow-hidden"
     >
-      <p class="mt-16 text-lg font-medium font-helvetica">
+      <p class="mt-16 lg:mt-24 lg-xl:mt-14 text-lg font-medium font-helvetica">
         Все последние материалы &#8594;
       </p>
-      <div class="flex flex-col items-center mt-7">
+      <div class="flex flex-col items-center mt-7 gap-7">
         <div class="flex w-full flex-col xs:flex-row relative">
-          <img src="./img/tabl.png" class="rounded-lg" alt="medicines" />
-          <div class="absolute left-1 top-1 flex flex-col">
+          <img
+            src="./img/tabl.png"
+            class="rounded-lg lg:max-h-[200px]"
+            alt="medicines"
+          />
+          <div class="absolute left-1 top-1 flex flex-col gap-1">
             <div
-              class="p-1 h-[30px] w-[90px] bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] w-fit bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
               <div
                 class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0"
@@ -150,41 +152,49 @@
               Новость
             </div>
             <div
-              class="p-1 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer mt-1 font-helvetica"
+              class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
-              <svg class="w-[20px] h-[20px]">
-                <use xlink:href="img/sprite.svg#redaction-darkmode"></use>
-              </svg>
+              <img
+                class="w-[18px] h-[16px] bg-white mr-[5px]"
+                src="../img/svg/redaction-dark.svg"
+                alt="redaction choice"
+              />
               Выбор Редакции
             </div>
           </div>
           <div class="flex flex-col ml-3">
-            <p class="text-[#323232] opacity-70 font-medium text-lg">
+            <p
+              class="text-[#323232] opacity-70 font-medium text-lg line-clamp-3"
+            >
               Глаза преподносят сюрпризы: в роговице обнаружены патрульные
               Т-лимфоциты
             </p>
-            <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
+            <div
+              class="mt-7 text-[#9799A5] text-[14px] xl:text-[17px] font-normal"
+            >
               Автор: Константин константинов
-              <span class="flex items-center font-inter">
+              <span
+                class="flex items text-[12px] xl:text-[17px]-center font-inter"
+              >
                 28.06.2022 | 192
                 <svg class="w-[15px] h-[15px]">
                   <use xlink:href="img/sprite.svg#see"></use>
                 </svg>
                 | 1600 слов
               </span>
-              <div class="flex text-[#9799A5] mt-3">
+              <div class="flex gap-[10px] flex-wrap text-[#9799A5] mt-3">
                 <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
                 >
                   Психология
                 </p>
                 <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
                 >
                   Психология
                 </p>
                 <p
-                  class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
+                  class="px-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
                 >
                   +2
                 </p>
@@ -192,145 +202,197 @@
             </div>
           </div>
         </div>
-        <div class="flex w-full flex-col xs:flex-row relative mt-7">
-          <img src="./img/tabl.png" class="rounded-lg" alt="medicines" />
-          <div class="absolute left-1 top-1 flex flex-col">
+        <div class="flex w-full flex-col xs:flex-row relative">
+          <img
+            src="./img/tabl.png"
+            class="rounded-lg lg:max-h-[200px]"
+            alt="medicines"
+          />
+          <div class="absolute left-1 top-1 flex flex-col gap-1">
             <div
-              class="p-1 h-[30px] w-[90px] bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+              class="px-2 h-[30px] w-fit bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
               <div
-                class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0 font-helvetica"
-              ></div>
-              Новость
-            </div>
-          </div>
-          <div class="flex flex-col ml-3">
-            <p class="text-[#323232] opacity-70 font-medium text-lg">
-              Глаза преподносят сюрпризы: в роговице обнаружены патрульные
-              Т-лимфоциты
-            </p>
-            <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
-              Автор: Константин константинов
-              <span class="flex items-center font-inter">
-                28.06.2022 | 192
-                <svg class="w-[15px] h-[15px]">
-                  <use xlink:href="img/sprite.svg#see"></use>
-                </svg>
-                | 1600 слов
-              </span>
-              <div class="flex text-[#9799A5] mt-3">
-                <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
-                >
-                  Психология
-                </p>
-                <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
-                >
-                  Психология
-                </p>
-                <p
-                  class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
-                >
-                  +2
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex w-full flex-col xs:flex-row relative mt-7">
-          <img src="./img/tabl.png" class="rounded-lg" alt="medicines" />
-          <div class="absolute left-1 top-1 flex flex-col">
-            <div
-              class="p-1 h-[30px] w-[90px] bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
-            >
-              <div
-                class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0 font-helvetica"
-              ></div>
-              Новость
-            </div>
-          </div>
-          <div class="flex flex-col ml-3">
-            <p class="text-[#323232] opacity-70 font-medium text-lg">
-              Глаза преподносят сюрпризы: в роговице обнаружены патрульные
-              Т-лимфоциты
-            </p>
-            <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
-              Автор: Константин константинов
-              <span class="flex items-center font-inter">
-                28.06.2022 | 192
-                <svg class="w-[15px] h-[15px]">
-                  <use xlink:href="img/sprite.svg#see"></use>
-                </svg>
-                | 1600 слов
-              </span>
-              <div class="flex text-[#9799A5] mt-3">
-                <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
-                >
-                  Психология
-                </p>
-                <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
-                >
-                  Психология
-                </p>
-                <p
-                  class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
-                >
-                  +2
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex w-full flex-col xs:flex-row relative mt-7">
-          <img src="./img/tabl.png" class="rounded-lg" alt="medicines" />
-          <div class="absolute left-1 top-1 flex flex-col">
-            <div
-              class="p-1 h-[30px] w-[90px] bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
-            >
-              <div
-                class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0 font-helvetica"
+                class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0"
               ></div>
               Новость
             </div>
             <div
-              class="p-1 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer mt-1"
+              class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
-              <svg class="w-[20px] h-[20px]">
-                <use xlink:href="img/sprite.svg#redaction-darkmode"></use>
-              </svg>
+              <img
+                class="w-[18px] h-[16px] bg-white mr-[5px]"
+                src="../img/svg/redaction-dark.svg"
+                alt="redaction choice"
+              />
               Выбор Редакции
             </div>
           </div>
           <div class="flex flex-col ml-3">
-            <p class="text-[#323232] opacity-70 font-medium text-lg">
+            <p
+              class="text-[#323232] opacity-70 font-medium text-lg line-clamp-3"
+            >
               Глаза преподносят сюрпризы: в роговице обнаружены патрульные
               Т-лимфоциты
             </p>
-            <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
+            <div
+              class="mt-7 text-[#9799A5] text-[14px] xl:text-[17px] font-normal"
+            >
               Автор: Константин константинов
-              <span class="flex items-center font-inter">
+              <span
+                class="flex items text-[12px] xl:text-[17px]-center font-inter"
+              >
                 28.06.2022 | 192
                 <svg class="w-[15px] h-[15px]">
                   <use xlink:href="img/sprite.svg#see"></use>
                 </svg>
                 | 1600 слов
               </span>
-              <div class="flex text-[#9799A5] mt-3">
+              <div class="flex gap-[10px] flex-wrap text-[#9799A5] mt-3">
                 <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
                 >
                   Психология
                 </p>
                 <p
-                  class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
                 >
                   Психология
                 </p>
                 <p
-                  class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg ml-5 flex-center cursor-pointer font-helvetica"
+                  class="px-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+                >
+                  +2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col xs:flex-row relative">
+          <img
+            src="./img/tabl.png"
+            class="rounded-lg lg:max-h-[200px]"
+            alt="medicines"
+          />
+          <div class="absolute left-1 top-1 flex flex-col gap-1">
+            <div
+              class="px-2 h-[30px] w-fit bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+            >
+              <div
+                class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0"
+              ></div>
+              Новость
+            </div>
+            <div
+              class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+            >
+              <img
+                class="w-[18px] h-[16px] bg-white mr-[5px]"
+                src="../img/svg/redaction-dark.svg"
+                alt="redaction choice"
+              />
+              Выбор Редакции
+            </div>
+          </div>
+          <div class="flex flex-col ml-3">
+            <p
+              class="text-[#323232] opacity-70 font-medium text-lg line-clamp-3"
+            >
+              Глаза преподносят сюрпризы: в роговице обнаружены патрульные
+              Т-лимфоциты
+            </p>
+            <div
+              class="mt-7 text-[#9799A5] text-[14px] xl:text-[17px] font-normal"
+            >
+              Автор: Константин константинов
+              <span
+                class="flex text-[12px] xl:text-[17px] items-center font-inter"
+              >
+                28.06.2022 | 192
+                <svg class="w-[15px] h-[15px]">
+                  <use xlink:href="img/sprite.svg#see"></use>
+                </svg>
+                | 1600 слов
+              </span>
+              <div class="flex gap-[10px] flex-wrap text-[#9799A5] mt-3">
+                <p
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+                >
+                  Психология
+                </p>
+                <p
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+                >
+                  Психология
+                </p>
+                <p
+                  class="px-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+                >
+                  +2
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col xs:flex-row relative">
+          <img
+            src="./img/tabl.png"
+            class="rounded-lg lg:max-h-[200px]"
+            alt="medicines"
+          />
+          <div class="absolute left-1 top-1 flex flex-col gap-1">
+            <div
+              class="px-2 h-[30px] w-fit bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+            >
+              <div
+                class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-1 p-0"
+              ></div>
+              Новость
+            </div>
+            <div
+              class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+            >
+              <img
+                class="w-[18px] h-[16px] bg-white mr-[5px]"
+                src="../img/svg/redaction-dark.svg"
+                alt="redaction choice"
+              />
+              Выбор Редакции
+            </div>
+          </div>
+          <div class="flex flex-col ml-3">
+            <p
+              class="text-[#323232] opacity-70 font-medium text-lg line-clamp-3"
+            >
+              Глаза преподносят сюрпризы: в роговице обнаружены патрульные
+              Т-лимфоциты
+            </p>
+            <div
+              class="mt-7 text-[#9799A5] text-[14px] xl:text-[17px] font-normal"
+            >
+              Автор: Константин константинов
+              <span
+                class="flex text-[12px] xl:text-[17px] items-center font-inter"
+              >
+                28.06.2022 | 192
+                <svg class="w-[15px] h-[15px]">
+                  <use xlink:href="img/sprite.svg#see"></use>
+                </svg>
+                | 1600 слов
+              </span>
+              <div class="flex gap-[10px] flex-wrap text-[#9799A5] mt-3">
+                <p
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
+                >
+                  Психология
+                </p>
+                <p
+                  class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+                >
+                  Психология
+                </p>
+                <p
+                  class="px-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
                 >
                   +2
                 </p>

@@ -3,7 +3,7 @@
 @mixin burger {
   --burger-width: 30px;
   --burger-height: 30px;
-  --burger-line-height: 2px;
+  --burger-line-height: 3px;
 
   position: relative;
   border: none;
@@ -22,6 +22,7 @@
     position: absolute;
     left: 0;
     width: 100%;
+    border-radius: 6px;
 
     height: var(--burger-line-height);
     background-color: currentColor;
@@ -29,22 +30,25 @@
   }
 
   &::before {
-    top: 0;
+    top: 6px;
   }
 
   &::after {
-    top: calc(100% - var(--burger-line-height));
+    top: calc(81% - var(--burger-line-height));
   }
 
   &__line {
     position: absolute;
     left: 0;
     top: 50%;
+    border-radius: 6px;
+
     width: 100%;
     height: var(--burger-line-height);
     background-color: currentColor;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;
+
   }
 
   &--active {

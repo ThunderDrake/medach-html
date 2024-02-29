@@ -2,7 +2,7 @@
   <div class="wrapper text-white !pb-0">
     <div class="w-full flex items-center flex-wrap xs:flex-nowrap relative">
       <div
-        class="w-[20px] h-[20px] rounded-full bg-[#008FA0] absolute -left-10"
+        class="w-[20px] h-[20px] rounded-full bg-[#008FA0] hidden lg:block absolute -left-[29px] xl:-left-10"
       ></div>
       <h2 class="title xs:whitespace-nowrap">Вакансии</h2>
       <span
@@ -23,7 +23,7 @@
       class="accordion-content one-col grid grid-cols-1 overflow-hidden lg:overflow-visible gap-16 transition-all duration-700 ease-in-out grid-rows-[1fr] opacity-100 relative job"
     >
       <div
-        class="w-[2px] h-[120%] bg-linear-blue-purple hidden lg:block absolute -left-[30px] -top-7 z-[999]"
+        class="w-[2px] lg:h-[117%] lg-xl:h-[118%] 2xl:h-[120%] bg-linear-blue-purple hidden lg:block absolute lg:-left-[20px] xl:-left-[30px] -top-7 z-[999]"
       ></div>
       <div
         class="absolute hidden 2xl:flex-center 2xl:flex-col -right-[150px] top-[40%] z-[999] text-[#fafafa] font-inter"
@@ -41,41 +41,41 @@
       <div class="flex flex-col overflow-hidden">
         <p class="mt-3 text-base text-[#9CA3AF]">Выбранные города для поиска</p>
         <div
-          class="grid text-[#9799A5] max-w-[700px] mt-3 gap-2 grid-cols-2 xs:grid-cols-3 font-helvetica"
+          class="text-[#9799A5] max-w-[700px] mt-3 flex gap-4 flex-wrap font-helvetica"
         >
-          <p
-            class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer"
+          <button
+            class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer"
           >
             Москва
-          </p>
-          <p
-            class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+          </button>
+          <button
+            class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
           >
             Санкт - петербург
-          </p>
-          <p
-            class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center"
+          </button>
+          <button
+            class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center"
           >
             Ростов
-          </p>
-          <p
-            class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+          </button>
+          <button
+            class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
           >
             Волгоград
-          </p>
+          </button>
 
-          <p
+          <button
             class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
           >
             +
-          </p>
+          </button>
         </div>
         <div
           class="w-full flex flex-col lg:flex-row lg:flex-between font-helvetica"
         >
-          <div class="flex flex-col mt-12 text-[#FAFAFA] pr-10">
+          <div class="flex flex-col mt-12 text-[#FAFAFA] pr-0 lg:pr-5 xl:pr-24">
             <div
-              class="p-1 h-[30px] w-[130px] bg-[#89D7E0] border-[#008FA0] border-2 rounded-lg flex flex-center cursor-pointer text-[#323232] font-helvetica"
+              class="px-2 h-[30px] w-fit bg-[#89D7E0] border-[#008FA0] border-2 rounded-lg flex flex-center cursor-pointer text-[#323232] font-helvetica"
             >
               <div
                 class="w-[10px] h-[10px] rounded-full bg-[#008FA0] m-0 mr-1 p-0"
@@ -108,7 +108,7 @@
           </div>
           <div class="flex flex-col mt-12 text-[#FAFAFA]">
             <div
-              class="p-1 h-[30px] w-[130px] bg-[#89D7E0] border-[#008FA0] border-2 rounded-lg flex flex-center cursor-pointer text-[#323232] font-helvetica"
+              class="px-2 h-[30px] w-fit bg-[#89D7E0] border-[#008FA0] border-2 rounded-lg flex flex-center cursor-pointer text-[#323232] font-helvetica"
             >
               <div
                 class="w-[10px] h-[10px] rounded-full bg-[#008FA0] m-0 mr-1 p-0"
@@ -157,12 +157,12 @@
               />
 
               <button
-                class="absolute bottom-[12px] right-[20px] md:right-[75px] z-50 text-[#556583]"
+                class="absolute bottom-[12px] right-[75px] md:right-[90px] lg:right-[10px] lg-xl:right-[20px] xl:right-[55px] 2xl:right-[65px] z-50 text-[#556583]"
               >
                 Отправить
               </button>
               <svg
-                class="absolute hidden lg:block -right-2 bottom-[9px] w-[40px] h-[40px] cursor-pointer"
+                class="absolute hidden lg:block lg:-right-14 2xl:-right-2 bottom-[9px] w-[40px] h-[40px] cursor-pointer"
               >
                 <use xlink:href="img/sprite.svg#logo-blue"></use>
               </svg>

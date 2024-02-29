@@ -1,16 +1,4 @@
-<svg width="26.869629" height="26.869141" viewBox="0 0 26.8696 26.8691" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs>
-		<clipPath id="clip4_3154">
-			<rect id="search" width="25.750000" height="25.750000" transform="matrix(-1 0 0 1 27.4294 0.559783)" fill="white" fill-opacity="0"/>
-		</clipPath>
-	</defs>
-	<rect id="search" width="26.869566" height="26.869566" fill="#FFFFFF" fill-opacity="0"/>
-	<rect id="search" width="25.750000" height="25.750000" transform="matrix(-1 0 0 1 27.4294 0.559783)" fill="#FFFFFF" fill-opacity="0"/>
-	<g clip-path="url(#clip4_3154)">
-		<path id="Vector" d="M14.5542 21.2725C19.5007 21.2725 23.5107 17.2627 23.5107 12.3154C23.5107 7.36914 19.5007 3.35938 14.5542 3.35938C9.60767 3.35938 5.59766 7.36914 5.59766 12.3154C5.59766 17.2627 9.60767 21.2725 14.5542 21.2725Z" stroke="#323232" stroke-opacity="1.000000" stroke-width="2.239130" stroke-linejoin="round"/>
-		<path id="Vector" d="M8.22852 18.6416L3.3584 18.6416" stroke="#323232" stroke-opacity="1.000000" stroke-width="2.239130" stroke-linejoin="round" stroke-linecap="round"/>
-	</g>
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8616 21.7402C9.91504 21.7402 5.90507 17.7302 5.90507 12.7837C5.90507 7.83712 9.91504 3.82715 14.8616 3.82715C19.8081 3.82715 23.8181 7.83712 23.8181 12.7837C23.8181 17.7302 19.8081 21.7402 14.8616 21.7402Z" stroke="#323232" stroke-width="2.23913" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.66602 23.9805L8.53613 19.1104" stroke="#323232" stroke-width="2.23913" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

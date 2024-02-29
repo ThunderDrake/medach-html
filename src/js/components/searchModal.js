@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded",(e)=>{
   const moreBtn = document.getElementById('more');
   const tags = document.getElementById('tags');
   moreBtn.addEventListener('click', () => {

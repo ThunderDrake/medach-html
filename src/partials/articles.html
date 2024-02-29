@@ -1,7 +1,7 @@
 <section id="articles" class="mt-24 wrapper">
   <div class="w-full flex items-center flex-wrap xs:flex-nowrap relative">
     <div
-      class="w-[20px] h-[20px] rounded-full bg-[#F83A95] absolute -left-10"
+      class="w-[20px] h-[20px] rounded-full bg-[#F83A95] hidden lg:block absolute -left-[29px] xl:-left-10"
     ></div>
     <h2 class="title xs:whitespace-nowrap">Статьи</h2>
     <span
@@ -19,62 +19,62 @@
     </button>
   </div>
   <div
-    class="accordion-content grid grid-cols-1 lg:grid-cols-2 overflow-hidden lg:overflow-visible gap-16 transition-all duration-700 ease-in-out grid-rows-[1fr] opacity-100 relative"
+    class="accordion-content grid grid-cols-1 lg:grid-cols-2 overflow-hidden lg:overflow-visible gap-0 lg:gap-5 xl:gap-24 transition-all duration-700 ease-in-out grid-rows-[1fr] opacity-100 relative"
   >
     <div
-      class="w-[2px] h-[124%] bg-linear-pink-red hidden lg:block absolute -left-[30px] -top-7 z-[999]"
+      class="w-[2px] lg:h-[122%] lg-xl:h-[122%] 2xl:h-[124%] bg-linear-pink-red hidden lg:block absolute lg:-left-[20px] xl:-left-[30px] -top-7 z-[999]"
     ></div>
     <div class="flex flex-col overflow-hidden">
       <p class="mt-3 text-base text-[#9CA3AF]">
         Выбранные Тэги для данной категории материала
       </p>
-      <div
-        class="grid text-[#9799A5] mt-3 gap-2 grid-cols-3 xs:grid-cols-4 2xl:grid-cols-5 font-helvetica"
-      >
+      <div class="flex text-[#9799A5] mt-3 flex-wrap gap-4">
         <p
-          class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
         >
           Биология
         </p>
         <p
-          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
         >
           Фармакология
         </p>
         <p
-          class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center font-helvetica"
         >
           Психология
         </p>
         <p
-          class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+          class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
         >
           Энтомология
         </p>
 
         <p
-          class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+          class="w-[30px] h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
         >
           +
         </p>
       </div>
       <div class="mt-8 relative flex flex-col">
         <img src="./img/post.png" alt="medic" />
-        <div class="absolute left-1 top-1 flex font-helvetica">
+        <div class="absolute left-1 top-1 flex gap-[6px]">
           <div
-            class="p-1 h-[30px] w-[90px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer"
+            class="px-2 h-[30px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
           >
             <div
-              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-1 p-0"
+              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-2 p-0"
             ></div>
             Статья
           </div>
           <div
-            class="p-1 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer ml-1"
+            class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
           >
-            <svg class="w-[10px] h-[10px]">
-              <use xlink:href="img/sprite.svg#redaction-darkmode"></use>
-            </svg>
+            <img
+              class="w-[18px] h-[16px] bg-white mr-[5px]"
+              src="../img/svg/redaction-dark.svg"
+              alt="redaction choice"
+            />
             Выбор Редакции
           </div>
         </div>
@@ -91,38 +91,37 @@
         </p>
         <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
           Автор: Константин константинов
-          <span class="flex items-center font-inter">
+          <span class="flex items-center text-[12px] xl:text-[17px] font-inter">
             28.06.2022 | 192
             <svg class="w-[15px] h-[15px]">
               <use xlink:href="img/sprite.svg#see"></use>
             </svg>
+
             | 1600 слов
           </span>
-          <div
-            class="text-[#9799A5] mt-3 gap-2 grid grid-cols-3 xs:grid-cols-5 font-helvetica"
-          >
+          <div class="text-[#9799A5] mt-3 gap-2 flex flex-wrap">
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
@@ -133,24 +132,28 @@
     <div
       class="flex items-center lg:items-start justify-center flex-col overflow-hidden"
     >
-      <p class="mt-16 text-lg font-medium font-helvetica">Все статьи &#8594;</p>
-      <div class="relative flex flex-col mt-[16px]">
+      <p class="mt-16 lg:mt-28 lg-xl:mt-14 text-lg font-medium font-helvetica">
+        Все статьи &#8594;
+      </p>
+      <div class="mt-[14px] relative flex flex-col">
         <img src="./img/post.png" alt="medic" />
-        <div class="absolute left-1 top-1 flex font-helvetica">
+        <div class="absolute left-1 top-1 flex gap-[6px]">
           <div
-            class="p-1 h-[30px] w-[90px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer"
+            class="px-2 h-[30px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
           >
             <div
-              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-1 p-0"
+              class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-2 p-0"
             ></div>
             Статья
           </div>
           <div
-            class="p-1 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer ml-1"
+            class="px-2 h-[30px] bg-white border-[#323232] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
           >
-            <svg class="w-[10px] h-[10px]">
-              <use xlink:href="img/sprite.svg#redaction-darkmode"></use>
-            </svg>
+            <img
+              class="w-[18px] h-[16px] bg-white mr-[5px]"
+              src="../img/svg/redaction-dark.svg"
+              alt="redaction choice"
+            />
             Выбор Редакции
           </div>
         </div>
@@ -167,38 +170,37 @@
         </p>
         <div class="mt-7 text-[#9799A5] text-[17px] font-normal">
           Автор: Константин константинов
-          <span class="flex items-center font-inter">
+          <span class="flex items-center text-[12px] xl:text-[17px] font-inter">
             28.06.2022 | 192
             <svg class="w-[15px] h-[15px]">
               <use xlink:href="img/sprite.svg#see"></use>
             </svg>
+
             | 1600 слов
           </span>
-          <div
-            class="text-[#9799A5] mt-3 gap-2 grid grid-cols-3 xs:grid-cols-5 font-helvetica"
-          >
+          <div class="text-[#9799A5] mt-3 gap-2 flex flex-wrap">
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
             <p
-              class="p-1 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer"
+              class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
             >
               Психология
             </p>
