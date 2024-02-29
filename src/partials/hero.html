@@ -1,192 +1,191 @@
 <main
   class="wrapper flex-center text-white relative transition-all duration-300"
 >
-  <div class="flex gap-2 flex-wrap justify-center w-fit">
-    <div class="flex flex-col gap-2 order-3 md:order-1">
+  <div class="grid-cards">
+    <div class="grid-card grid-card-3">
       <div
-        class="group w-[200px] h-[300px] card-bg bg-[url('/img/пм1.png')] flex flex-col justify-between"
+        class="group relative w-full h-full card-bg bg-[url('/img/пм1.png')] flex flex-col justify-between"
       >
         <div
-          class="w-[200px] h-[300px] opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-red transition-all duration-500"
+          class="h-full rounded-lg w-full opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-red transition-all duration-500"
         ></div>
         <h2
-          class="ml-2 flex items-center text-white group-hover:text-[#F87171] transition-all duration-500 text-sm font-semibold"
+          class="ml-2 mt-[10px] flex items-center text-white group-hover:text-[#F87171] transition-all duration-500 text-sm font-semibold"
         >
-          <div class="w-[10px] h-[10px] rounded-full bg-[#F87171] mr-1"></div>
-          Последние материалы
+          <div class="w-5 h-5 rounded-full bg-[#F87171] mr-3"></div>
+          Последние материалы &#8594;
         </h2>
-        <div class="ml-[22px] mb-6 max-w-36 text-base">
+        <div class="mx-10 mb-6 max-w-60 text-base font-medium">
           CAR-T-клетки как краеугольный камень в терапии рака простаты
           <p class="mt-2 font-normal text-white/60 text-sm">13 сентября</p>
         </div>
       </div>
+    </div>
+    <div class="grid-card">
       <div
-        class="w-[200px] h-[100px] bg-[url('/img/подкасты8.png')] group card-bg flex items-center justify-center"
+        class="w-full h-full card-bg bg-[url('/img/вр2.png')] flex flex-col items-center justify-center font-semibold text-sm"
+      >
+        Выбор редакции
+        <svg class="mt-2 w-10 h-10">
+          <use xlink:href="img/sprite.svg#redaction"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="grid-card grid-card-2">
+      <div
+        class="w-full h-full relative card-bg flex flex-col justify-between group bg-[url('/img/тм4.png')]"
+      >
+        <div
+          class="w-full h-full opacity-0 rounded-lg group-hover:opacity-100 absolute bg-radial-gradient-orange transition-all duration-500"
+        ></div>
+        <h2
+          class="ml-2 mt-[10px] flex items-center text-white group-hover:text-[#FDBA74] transition-all duration-500 text-sm font-semibold"
+        >
+          <div class="w-5 h-5 rounded-full bg-[#FDBA74] mr-3"></div>
+          Топ - Материалов
+        </h2>
+        <div class="mx-10 mb-6 max-w-60 text-base font-medium">
+          <span class="line-clamp-4 2xl:line-clamp-none">
+            Глаза преподносят сюрпризы: в роговице обнаружены патрульные
+            Т-лимфоциты</span
+          >
+
+          <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-card grid-card-2">
+      <div
+        class="w-full h-full relative group bg-[url('/img/новости6.png')] flex flex-col justify-between card-bg"
+      >
+        <div
+          class="w-full h-full opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-blue transition-all duration-500"
+        ></div>
+        <h2
+          class="ml-2 mt-[10px] flex items-center text-white group-hover:text-[#BFDBFE] transition-all duration-500 text-sm font-semibold"
+        >
+          <div class="w-5 h-5 rounded-full bg-[#BFDBFE] mr-3"></div>
+          Новости
+        </h2>
+        <div class="mx-10 mb-6 max-w-60 text-base font-medium">
+          <span class="line-clamp-4 2xl:line-clamp-none">
+            Глаза преподносят сюрпризы: в роговице обнаружены патрульные
+            Т-лимфоциты</span
+          >
+
+          <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-card grid-card-2">
+      <div
+        class="group w-full h-full relative card-bg bg-[url('/img/инфографика3.png')] flex flex-col justify-between"
+      >
+        <div
+          class="w-full h-full opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-green transition-all duration-500"
+        ></div>
+        <h2
+          class="ml-2 mt-[10px] flex items-center text-white group-hover:text-[#B3DF98] transition-all duration-500 text-sm font-semibold"
+        >
+          <div class="w-5 h-5 rounded-full bg-[#B3DF98] mr-3"></div>
+          Инфографика
+        </h2>
+        <div class="mx-10 mb-6 max-w-60 text-base font-medium">
+          <span class="line-clamp-4 2xl:line-clamp-none">
+            Глаза преподносят сюрпризы: в роговице обнаружены патрульные
+            Т-лимфоциты</span
+          >
+
+          <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-card grid-card-2">
+      <div
+        class="w-full h-full bg-blue-200 bg-[url('/img/реклама5.png')] card-bg text-right pr-3 pt-2"
+      >
+        Реклама
+      </div>
+    </div>
+    <div class="grid-card grid-card-3">
+      <div
+        class="w-full h-full relative group bg-[url('/img/статьи7.png')] flex flex-col justify-between card-bg"
+      >
+        <div
+          class="w-full h-full opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-pink transition-all duration-500"
+        ></div>
+        <h2
+          class="ml-2 mt-[10px] flex items-center text-white group-hover:text-[#F9A8D4] transition-all duration-500 text-sm font-semibold"
+        >
+          <div class="w-5 h-5 rounded-full bg-[#F9A8D4] mr-3"></div>
+          Статьи
+        </h2>
+        <div class="mx-10 mb-6 max-w-60 text-base font-medium">
+          <span class="line-clamp-4 2xl:line-clamp-none">
+            Глаза преподносят сюрпризы: в роговице обнаружены патрульные
+            Т-лимфоциты</span
+          >
+
+          <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-card">
+      <div
+        class="w-full h-full bg-[url('/img/подкасты8.png')] group card-bg flex items-center justify-center"
       >
         <h2
           class="items-center text-white group-hover:text-[#FDE68A] transition-all duration-500 text-sm flex flex-col font-semibold"
         >
-          <div class="flex-center">
-            <div
-              class="w-[10px] h-[10px] rounded-full bg-[#FDE68A] m-0 mr-1 p-0"
-            ></div>
+          <div class="flex-center text-sm font-semibold">
+            <div class="w-5 h-5 rounded-full bg-[#FDE68A] m-0 mr-2 p-0"></div>
             Подкасты
           </div>
-          <span> &#9654;</span>
+          <span class="mt-3 text-lg"> &#9654;</span>
         </h2>
       </div>
+    </div>
+    <div class="grid-card">
       <div
-        class="w-[200px] h-[100px] bg-[url('/img/вакансии10.png')] group card-bg flex items-center justify-center"
+        class="w-full h-full bg-[url('/img/вакансии10.png')] group card-bg flex items-center justify-center"
+      >
+        <h2
+          class="items-center text-white group-hover:text-[#E44646] transition-all duration-500 text-sm flex flex-col font-semibold"
+        >
+          <div class="flex-center">
+            <div class="w-5 h-5 rounded-full bg-[#E44646] m-0 mr-2 p-0"></div>
+            Видео Материалы
+          </div>
+          <span class="mt-3 text-lg"> &#9654;</span>
+        </h2>
+      </div>
+    </div>
+    <div class="grid-card">
+      <div
+        class="w-full h-full bg-[url('/img/вакансии10.png')] group card-bg flex items-center justify-center"
       >
         <h2
           class="items-center text-white group-hover:text-[#A5F3FC] transition-all duration-500 text-sm flex flex-col font-semibold"
         >
           <div class="flex-center">
-            <div
-              class="w-[10px] h-[10px] rounded-full bg-[#A5F3FC] m-0 mr-1 p-0"
-            ></div>
+            <div class="w-5 h-5 rounded-full bg-[#A5F3FC] m-0 mr-2 p-0"></div>
             Поиск вакансий
           </div>
         </h2>
       </div>
     </div>
-    <div class="flex flex-col gap-2 flex-wrap order-2">
-      <div class="flex gap-2 flex-wrap justify-center">
-        <div class="flex flex-col gap-2 flex-wrap">
-          <div
-            class="w-[200px] h-[100px] card-bg bg-[url('/img/вр2.png')] flex flex-col items-center justify-center text-sm"
-          >
-            Выбор редакции
-            <svg class="mt-2 w-10 h-10">
-              <use xlink:href="img/sprite.svg#redaction"></use>
-            </svg>
-          </div>
-          <div
-            class="group w-[200px] h-[192px] card-bg bg-[url('/img/инфографика3.png')] flex flex-col justify-between"
-          >
-            <div
-              class="w-[200px] h-[192px] opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-green transition-all duration-500"
-            ></div>
-            <h2
-              class="ml-2 flex items-center text-white group-hover:text-[#B3DF98] transition-all duration-500 text-sm font-semibold"
-            >
-              <div
-                class="w-[10px] h-[10px] rounded-full bg-[#B3DF98] mr-1"
-              ></div>
-              Полезные материалы
-            </h2>
-            <div class="ml-[22px] mb-5 text-base">
-              <span class="line-clamp-4 2xl:line-clamp-none">
-                Глаза преподносят сюрпризы: в роговице обнаружены патрульные
-                Т-лимфоциты</span
-              >
-
-              <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
-            </div>
-          </div>
-          <div
-            class="w-[200px] h-[100px] bg-[url('/img/вакансии10.png')] group card-bg flex items-center justify-center"
-          >
-            <h2
-              class="items-center text-white group-hover:text-[#E44646] transition-all duration-500 text-sm flex flex-col font-semibold"
-            >
-              <div class="flex-center">
-                <div
-                  class="w-[10px] h-[10px] rounded-full bg-[#E44646] m-0 mr-1 p-0"
-                ></div>
-                Поиск вакансий
-              </div>
-              <span> &#9654;</span>
-            </h2>
-          </div>
-        </div>
-        <div class="flex flex-col gap-2">
-          <div
-            class="w-[200px] h-[200px] card-bg flex flex-col justify-between group bg-[url('/img/тм4.png')]"
-          >
-            <div
-              class="w-[200px] h-[200px] opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-orange transition-all duration-500"
-            ></div>
-            <h2
-              class="ml-2 flex items-center text-white group-hover:text-[#FDBA74] transition-all duration-500 text-sm font-semibold"
-            >
-              <div
-                class="w-[10px] h-[10px] rounded-full bg-[#FDBA74] mr-1"
-              ></div>
-              Топ - Материалов
-            </h2>
-            <div class="ml-[22px] mb-5 text-base">
-              <span class="line-clamp-4 2xl:line-clamp-none">
-                Глаза преподносят сюрпризы: в роговице обнаружены патрульные
-                Т-лимфоциты</span
-              >
-
-              <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
-            </div>
-          </div>
-          <div
-            class="w-[200px] h-[200px] bg-blue-200 bg-[url('/img/реклама5.png')] card-bg text-right pr-3 pt-2"
-          >
-            Реклама
-          </div>
-        </div>
-      </div>
+    <div class="grid-card grid-card-long">
       <div
-        class="w-[200px] xxs:w-full bg-[url('/img/мероприятия11.png')] h-[100px] group card-bg flex items-center justify-center mx-auto"
+        class="w-full h-full bg-[url('/img/мероприятия11.png')] group card-bg flex items-center justify-center mx-auto"
       >
         <h2
           class="items-center text-white group-hover:text-[#9A8CF0] transition-all duration-500 text-sm flex flex-col font-semibold"
         >
           <div class="flex-center">
-            <div
-              class="w-[10px] h-[10px] rounded-full bg-[#9A8CF0] m-0 mr-1 p-0"
-            ></div>
+            <div class="w-5 h-5 rounded-full bg-[#9A8CF0] m-0 mr-2 p-0"></div>
             Календарь Мероприятий
           </div>
         </h2>
-      </div>
-    </div>
-    <div class="flex flex-col sm:flex-row lg:flex-col gap-2 order-3">
-      <div
-        class="w-[200px] sm:w-[304px] lg:w-[200px] group h-[200px] bg-[url('/img/новости6.png')] flex flex-col justify-between card-bg"
-      >
-        <div
-          class="w-[200px] h-[200px] opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-blue transition-all duration-500"
-        ></div>
-        <h2
-          class="ml-2 flex items-center text-white group-hover:text-[#BFDBFE] transition-all duration-500 text-sm font-semibold"
-        >
-          <div class="w-[10px] h-[10px] rounded-full bg-[#BFDBFE] mr-1"></div>
-          Новости
-        </h2>
-        <div class="ml-[22px] mb-5 text-base">
-          <span class="line-clamp-4 2xl:line-clamp-none">
-            Глаза преподносят сюрпризы: в роговице обнаружены патрульные
-            Т-лимфоциты</span
-          >
-
-          <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
-        </div>
-      </div>
-      <div
-        class="w-[200px] h-[308px] sm:w-[303px] lg:w-[200px] sm:h-[200px] lg:h-[308px] group bg-[url('/img/статьи7.png')] flex flex-col justify-between card-bg"
-      >
-        <div
-          class="w-[200px] h-[308px] opacity-0 group-hover:opacity-100 absolute bg-radial-gradient-pink transition-all duration-500"
-        ></div>
-        <h2
-          class="ml-2 flex items-center text-white group-hover:text-[#F9A8D4] transition-all duration-500 text-sm font-semibold"
-        >
-          <div class="w-[10px] h-[10px] rounded-full bg-[#F9A8D4] mr-1"></div>
-          Статьи
-        </h2>
-        <div class="ml-[22px] mb-6 max-w-36 text-base">
-          <span class="line-clamp-4 2xl:line-clamp-none">
-            Глаза преподносят сюрпризы: в роговице обнаружены патрульные
-            Т-лимфоциты</span
-          >
-          <p class="mt-2 font-normal text-sm text-white/60">13 сентября</p>
-        </div>
       </div>
     </div>
   </div>

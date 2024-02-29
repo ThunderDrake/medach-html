@@ -43,6 +43,30 @@
     @apply text-[28px] mr-10 md:mr-0 md:text-[34px] xl:text-[48px] font-helvetica font-medium m-0 p-0;
   }
 }
+.grid-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap:10px;
+}
+.grid-card{
+  background-size: contain;
+  height: 100%;
+  min-height: 141px;
+  background-color:lightblue;
+  min-width: 320px;
+  border-radius:8px;
+  &-2{
+    grid-row: span 2;
+  }
+  &-3{
+    grid-row: span 3;
+
+  }
+  &-long{
+    grid-column: span 2;
+  }
+}
 .video {
   position: relative;
   width: 100%;
