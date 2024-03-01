@@ -1,0 +1,14 @@
+/* Стили для калеедаря */
+.dayname {
+  width: 30px;
+  height: 40px;
+}
+
+.day {
+  width: 30px;
+  height: 40px;
+}
+
+.container .inline {
+  box-shadow: none;
+}
