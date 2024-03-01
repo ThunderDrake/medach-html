@@ -171,3 +171,17 @@
 }
 // стили для скролла simplebar
 // @import "../../node_modules/simplebar/dist/simplebar.min";
+
+// Стили для календаря
+.dayname{
+  width: 30px;
+  height: 40px;
+}
+.day {
+  width: 30px;
+  height: 40px;
+}
+.container .inline{
+  box-shadow: none;
+  background:red;
+}
