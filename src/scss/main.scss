@@ -31,7 +31,7 @@
     @apply flex justify-between items-center ;
   }
   .card-bg{
-    @apply bg-no-repeat bg-[length:100%_100%] cursor-pointer ;
+    @apply bg-no-repeat bg-cover rounded-lg sm:bg-[length:100%_100%] cursor-pointer bg-center;
   }
   .text-default{
     @apply text-[#323232] dark:text-white
@@ -41,6 +41,24 @@
   }
   .title{
     @apply text-[28px] mr-10 md:mr-0 md:text-[34px] xl:text-[48px] font-helvetica font-medium m-0 p-0;
+  }
+  .day-selected{
+   @apply rounded-full bg-[#9A8CF0] text-white w-[30px]  flex-center relative;
+  }
+  .datepicker-day{
+    @apply min-w-[30px] h-[40px] flex-center relative cursor-pointer;
+  }
+  .selected-range-first{
+    @apply h-[25px] w-[22px] xxxs:w-[22px] left-2 absolute overflow-hidden bg-[#9A8CF0]/20 flex-center
+  }
+  .selected-range-last{
+    @apply h-[25px] pr-[32px] xxxs:pr-[39px] right-2  overflow-visible absolute bg-[#9A8CF0]/20  flex-center
+  }
+  .selected-range{
+    @apply h-[25px] right-0 w-[132%] xxxs:w-[157%] absolute overflow-visible bg-[#9A8CF0]/20 top-[7px] flex-center
+  }
+  .selected-range-startweek{
+    @apply h-[25px] left-0 w-[100%] xxxs:w-[101%] absolute overflow-visible bg-[#9A8CF0]/20 top-[7px] flex-center
   }
 }
 .grid-cards{
@@ -54,7 +72,7 @@
   height: 100%;
   min-height: 141px;
   background-color:lightblue;
-  min-width: 300px;
+  min-width: 280px;
   border-radius:8px;
   &-2{
     grid-row: span 2;
@@ -95,7 +113,7 @@
 @media (max-width:640px) {
   .grid-cards{
   display: grid;
-
+    width: 100%;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(13, 1fr);
   }

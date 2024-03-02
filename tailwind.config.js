@@ -24,6 +24,8 @@ module.exports = {
         black: "#000000",
         white: "#FFFFFF",
         secondary: "#9CA3AF",
+        "hsl-purple": "hsla(248, 77%, 75%, 0.2)"
+
       },
       backgroundImage: {
         "radial-gradient-red": "radial-gradient(circle 330px at  top left, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0)), radial-gradient(circle 280px at  bottom right, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0))",
@@ -42,6 +44,9 @@ module.exports = {
         "linear-blue-purple": "linear-gradient(#008FA0,#A78BFA)",
 
 
+      },
+      backgroundColor:{
+        "hsl-purple": "hsla(248, 77%, 75%, 0.2)"
 
       },
       fontFamily: {
