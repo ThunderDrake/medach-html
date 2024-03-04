@@ -65,7 +65,294 @@
       class="dark:bg-[#1D1D1D] bg-[#FCFCFC] transition-all duration-500 section"
     >
       @include('partials/header.html') @include('partials/redactorHeader.html')
-      <div class="mt-16 wrapper flex-center flex-col"></div>
+      <div class="mt-16 wrapper flex-center flex-col">
+        <div class="flex flex-col gap-12 w-full">
+          <label
+            for="article"
+            class="w-full flex flex-col items-start md:flex-row md:flex-between text-base text-[#9799A5] font-helvetica"
+            >Заголовок
+            <input
+              name="article"
+              type="text"
+              class="px-2 w-full mt-3 md:mt-0 max-w-[351px] font-medium text-4xl font-helvetica placeholder:text-[#E1E1E4]"
+              placeholder="Введите заголовок"
+          /></label>
+          <div
+            class="w-full flex flex-col items-start md:flex-row md:flex-between text-base text-[#9799A5] font-helvetica"
+          >
+            Обложка
+            <button
+              class="flex-center mt-3 md:mt-0 text-[#323232] text-base hover:text-[#1d1d1d] hover:font-medium transition-all duration-300"
+            >
+              Добавить обложку
+              <svg class="w-3 h-3 ml-2">
+                <use xlink:href="img/sprite.svg#plus"></use>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="w-full flex flex-col items-start md:flex-row md:flex-between text-base text-[#9799A5] font-helvetica"
+          >
+            Автор и соавторы
+            <div class="flex text-[#9799A5] mt-3 md:mt-0 flex-wrap gap-6">
+              <button
+                class="text-white bg-[#323232] px-2 h-[30px] flex-center rounded-lg font-helvetica text-base group transition-all duration-300"
+              >
+                Лев Лурье
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#close-white"></use>
+                </svg>
+              </button>
+              <button
+                class="hover:text-[#323232] text-[#9799A5] bg-white hover:border-[1px] hover:border-[#323232] hover:px-2 h-[30px] flex-center rounded-lg font-helvetica text-base group transition-all duration-300"
+              >
+                Петр Симонов
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </button>
+              <button
+                class="hover:text-[#323232] text-[#9799A5] bg-white hover:border-[1px] hover:border-[#323232] hover:px-2 h-[30px] flex-center rounded-lg font-helvetica text-base group transition-all duration-300"
+              >
+                Никлоай Твардовский
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </button>
+              <button
+                class="text-[#9799A5] hover:text-[#323232] bg-white h-[30px] flex-center rounded-lg font-helvetica text-base transition-all duration-300"
+              >
+                ... 3
+              </button>
+              <button class="flex-center text-[#323232] text-base">
+                <svg class="w-3 h-3 ml-2">
+                  <use xlink:href="img/sprite.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-full flex flex-col items-start md:flex-row md:flex-between text-base text-[#9799A5] font-helvetica"
+          >
+            Добавить Категорию
+            <div class="flex text-[#2B2C2E] mt-3 md:mt-0 flex-wrap gap-4">
+              <div
+                class="px-2 h-[30px] bg-[#F1BAEC] border-[#F83A95] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                <div
+                  class="w-[10px] h-[10px] rounded-full bg-[#F83A95] m-0 mr-2 p-0"
+                ></div>
+                Статья
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </div>
+              <div
+                class="px-2 h-[30px] bg-[#D1ECC1] border-[#77C845] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                <div
+                  class="w-[10px] h-[10px] rounded-full bg-[#77C845] m-0 mr-2 p-0"
+                ></div>
+                Инфографика
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </div>
+              <div
+                class="px-2 h-[30px] bg-[#BFDBFE] border-[#4D9BFD] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                <div
+                  class="w-[10px] h-[10px] rounded-full bg-[#4D9BFD] m-0 mr-2 p-0"
+                ></div>
+                Новость
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </div>
+              <button
+                class="px-2 h-[30px] border-[#2B2C2E] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+              >
+                +2
+              </button>
+              <div class="flex items-center">
+                <button
+                  class="w-5 h-5 flex-center rounded-full border-[1px] border-[#323232] bg-white hover:bg-black/20 transition-all duration-300"
+                  data-graph-path="category"
+                >
+                  <svg class="w-2 h-2">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full flex flex-col items-start md:flex-row md:flex-between text-base text-[#9799A5] font-helvetica"
+          >
+            Добавить Категорию
+            <div class="flex text-[#9799A5] mt-3 md:mt-0 flex-wrap gap-4">
+              <button
+                class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                Биология
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </button>
+              <button
+                class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                Биология
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </button>
+              <button
+                class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                Энтомология
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </button>
+              <button
+                class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex flex-center cursor-pointer font-helvetica group"
+              >
+                Психология
+                <svg class="h-2 w-2 ml-3 hidden group-hover:block">
+                  <use xlink:href="img/sprite.svg#exit-black"></use>
+                </svg>
+              </button>
+              <button
+                class="px-2 h-[30px] border-[#9799A5] border-2 rounded-lg flex-center cursor-pointer font-helvetica"
+              >
+                +2
+              </button>
+              <div class="flex items-center">
+                <button
+                  class="w-5 h-5 flex-center rounded-full border-[1px] border-[#9799A5] bg-white hover:bg-black/10 transition-all duration-300"
+                  data-graph-path="tag"
+                >
+                  <svg class="w-2 h-2">
+                    <use xlink:href="img/sprite.svg#plus-gray"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full flex flex-col items-start md:flex-row md:justify-between text-base text-[#9799A5] font-helvetica"
+          >
+            Лидтекст
+            <div
+              class="p-5 max-w-[900px] border-[1px] border-[#9799A5] mt-3 md:mt-0 md:ml-5 lg-xl:ml-0"
+            >
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet.." Lorem ipsum dolor sit ame
+              <p class="mt-6">
+                <span class="text-[#323232]">200 / 280</span> символов
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col text-[#52525B] font-helvetica mt-28">
+          <h2
+            class="font-helvetica font-medium text-[32px] text-[#323232] mb-8"
+          >
+            Британские ученые опять что-то доказали
+          </h2>
+          <div class="flex flex-col gap-5 selection:bg-[#FFE2D2]">
+            <p>
+              Praesent ultricies lacus in ligula volutpat feugiat. In hac
+              habitasse platea dictumst. In hac habitasse platea dictumst. Fusce
+              luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras
+              ultricies, elit sit amet cursus consectetur, risus felis
+              ullamcorper nulla, ut scelerisque sapien lorem non sem. Integer
+              vestibulum ornare ligula, a placerat lectus volutpat ultrices.
+              Aliquam commodo malesuada purus a mollis.
+            </p>
+            <p>
+              Vestibulum pulvinar aliquam libero eu consequat. Cras massa orci,
+              ultrices sed scelerisque id, semper vel neque. Proin a turpis quis
+              nibh cursus hendrerit sit amet vel libero. Nullam sit amet laoreet
+              ante. Mauris sit amet mi vitae arcu dignissim porttitor et in
+              arcu. Nullam eleifend molestie arcu, pretium fermentum orci
+              feugiat eget.
+            </p>
+            <p>
+              Integer dapibus tincidunt ipsum, at rutrum magna rutrum at.
+              Quisque pretium convallis vestibulum.
+            </p>
+          </div>
+          <div class="group mt-5 w-full relative">
+            <img
+              src="./img/dog.png"
+              alt="post-image"
+              class="rounded-[10px] w-full cursor-pointer"
+            />
+            <div
+              class="absolute hidden group-hover:flex gap-3 text-[#2B2C2E text-base] top-3 right-5"
+            >
+              <button
+                class="drop-shadow-md rounded-full w-[50px] h-[50px] border-[1px] bg-white border-white flex-center"
+              >
+                1:1
+              </button>
+              <button
+                class="drop-shadow-md rounded-full w-[50px] h-[50px] border-[1px] bg-white/50 border-white flex-center"
+              >
+                1:2
+              </button>
+            </div>
+            <div
+              class="absolute hidden group-hover:flex-center gap-5 text-[#2B2C2E text-base] bottom-5 inset-x-0 mx-auto w-[176px] h-[30px] lg:h-[53px] bg-white drop-shadow-md rounded-full"
+            >
+              <button>
+                <svg class="w-6 h-6">
+                  <use xlink:href="img/sprite.svg#edit-article"></use>
+                </svg>
+              </button>
+              <button>
+                <svg class="w-6 h-6">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+              </button>
+              <button>
+                <svg class="w-6 h-6">
+                  <use xlink:href="img/sprite.svg#repost"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-5 mb-10">
+            <p class="text-[#323232]/70 font-medium font-helvetica text-xl">
+              Рисунок 1. Счастливый пес на побережье
+            </p>
+            <p class="text-[#323232]/50 font-helvetica text-xl">
+              Он явно хорошо проводит время на берегу океана.
+            </p>
+          </div>
+          <p class="text-[#52525B] text-xl font-helvetica">
+            Praesent ultricies lacus in ligula volutpat feugiat. In hac
+            habitasse platea dictumst. In hac habitasse platea dictumst. Fusce
+            luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras
+            ultricies, elit sit amet cursus consectetur, risus felis ullamcorper
+            nulla, ut scelerisque sapien lorem non sem. Integer vestibulum
+            ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo
+            malesuada purus a mollis.
+          </p>
+        </div>
+      </div>
 
       @include('partials/searchModal.html') @include('partials/footer.html')
     </section>
