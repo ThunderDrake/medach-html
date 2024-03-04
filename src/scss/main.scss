@@ -3,26 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
 // базовые подключения
 @import "vars";
 @import "mixins";
 @import "fonts";
 @import "settings";
+
 :root {
-	--ColorPrimaryDk: #193957;
-    --ColorPrimaryLt: #556583;
+  --ColorPrimaryDk: #193957;
+  --ColorPrimaryLt: #556583;
 }
 
+.burger { @include burger; }
 
-.burger {@include burger}
 @layer utilities {
   .wrapper {
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 2xl:px-0 w-full;
   }
-  .header-wrapper{
+
+  .header-wrapper {
     @apply max-w-[2000px] lg:mx-auto p-5 md:px-10  w-full;
   }
+
   .flex-center {
     @apply flex justify-center items-center;
   }
@@ -30,151 +32,169 @@
   .flex-between {
     @apply flex justify-between items-center ;
   }
-  .card-bg{
+
+  .card-bg {
     @apply bg-no-repeat bg-cover rounded-lg sm:bg-[length:100%_100%] cursor-pointer bg-center;
   }
-  .text-default{
-    @apply text-[#323232] dark:text-white
+
+  .text-default {
+    @apply text-[#323232] dark:text-white;
   }
+
   .burger-styles {
     @apply dark:text-white before:text-white after:text-white ;
   }
-  .title{
+
+  .title {
     @apply text-[28px] mr-10 md:mr-0 md:text-[34px] xl:text-[48px] font-helvetica font-medium m-0 p-0;
   }
-  .day-selected{
-   @apply rounded-full bg-[#9A8CF0] text-white w-[30px]  flex-center relative;
+
+  .day-selected {
+    @apply rounded-full bg-[#9A8CF0] text-white w-[30px]  flex-center relative;
   }
-  .datepicker-day{
+
+  .datepicker-day {
     @apply min-w-[30px] h-[40px] flex-center relative cursor-pointer;
   }
-  .selected-range-first{
-    @apply h-[25px] w-[22px] xxxs:w-[22px] left-2 absolute overflow-hidden bg-[#9A8CF0]/20 flex-center
+
+  .selected-range-first {
+    @apply h-[25px] w-[22px] xxxs:w-[22px] left-2 absolute overflow-hidden bg-[#9A8CF0]/20 flex-center;
   }
-  .selected-range-last{
-    @apply h-[25px] pr-[32px] xxxs:pr-[39px] right-2  overflow-visible absolute bg-[#9A8CF0]/20  flex-center
+
+  .selected-range-last {
+    @apply h-[25px] pr-[32px] xxxs:pr-[39px] right-2  overflow-visible absolute bg-[#9A8CF0]/20  flex-center;
   }
-  .selected-range{
-    @apply h-[25px] right-0 w-[132%] xxxs:w-[157%] absolute overflow-visible bg-[#9A8CF0]/20 top-[7px] flex-center
+
+  .selected-range {
+    @apply h-[25px] right-0 w-[132%] xxxs:w-[157%] absolute overflow-visible bg-[#9A8CF0]/20 top-[7px] flex-center;
   }
-  .selected-range-startweek{
-    @apply h-[25px] left-0 w-[100%] xxxs:w-[101%] absolute overflow-visible bg-[#9A8CF0]/20 top-[7px] flex-center
+
+  .selected-range-startweek {
+    @apply h-[25px] left-0 w-[100%] xxxs:w-[101%] absolute overflow-visible bg-[#9A8CF0]/20 top-[7px] flex-center;
   }
 }
-.grid-cards{
+
+.grid-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  gap:10px;
+  width: 100%;
+  gap: 10px;
 }
-.grid-card{
-  background-size: contain;
+
+.grid-card > div {
+  background-size: cover;
+}
+
+.grid-card {
+  border-radius: 8px;
   height: 100%;
   min-height: 141px;
-  background-color:lightblue;
-  min-width: 280px;
-  border-radius:8px;
-  &-2{
+  background-size: contain;
+  background-color: lightblue;
+
+  &-2 {
     grid-row: span 2;
-
   }
-  &-3{
+
+  &-3 {
     grid-row: span 3;
-
   }
-  &-long{
+
+  &-long {
     grid-column: span 2;
   }
 }
+
 @media (max-width: 1280px) {
-.grid-cards{
-  grid-template-columns: repeat(3,1fr);
-}
-.grid-card{
-  &-long{
-    grid-column: span 3;
+  .grid-card .text-base {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  header .nav__menu {
+    display: none;
   }
 }
 
-}
-@media (max-width:1024px) {
-  .grid-cards{
-    grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(10, 1fr);
-
+@media (max-width: 1024px) {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
-  .grid-card{
-    &-long{
+
+  .grid-card {
+    &-long {
       grid-column: span 2;
     }
-
   }
 }
-@media (max-width:640px) {
-  .grid-cards{
-  display: grid;
-    width: 100%;
-    grid-template-columns: repeat(1,1fr);
+
+@media (max-width: 640px) {
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(13, 1fr);
+    width: 100%;
   }
-  .grid-card{
 
-    &-2{
+  .grid-card {
+    &-2 {
       grid-column: span 1;
       grid-row: span 2;
     }
-    &-3{
+
+    &-3 {
       grid-column: span 1;
       grid-row: span 2;
-
     }
-    &-long{
+
+    &-long {
       grid-column: span 1;
       grid-row: span 2;
-
     }
   }
 }
+
 .video {
   position: relative;
+  border-radius: 6px;
+  padding-bottom: 56.25%;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%;
-  background-color: #000000;
-  border-radius: 6px;
+  background-color: #000;
 }
 
 .video__link {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
-  border-radius: 6px;
-
 }
 
 .video__media {
   position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0;
   border: none;
   border-radius: 6px;
-
+  width: 100%;
+  height: 100%;
 }
 
 .video__button {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   z-index: 1;
   display: none;
+  border: none;
   padding: 0;
   width: 68px;
   height: 48px;
-  border: none;
   background-color: transparent;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -182,11 +202,11 @@
 
 .video__button-shape {
   fill: #212121;
-  fill-opacity: 0.8;
+  fill-opacity: 80%;
 }
 
 .video__button-icon {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .video__button:focus {
@@ -195,8 +215,8 @@
 
 .video:hover .video__button-shape,
 .video__button:focus .video__button-shape {
-  fill: #ff0000;
-  fill-opacity: 1;
+  fill: #f00;
+  fill-opacity: 100%;
 }
 
 /* Enabled */
