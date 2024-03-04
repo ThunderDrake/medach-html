@@ -27,6 +27,9 @@ module.exports = {
         "hsl-purple": "hsla(248, 77%, 75%, 0.2)"
 
       },
+      dropShadow: {
+        'bottom': '0px -6.670000076293945px 26.666667938232422px 0px #0000001A'
+      },
       backgroundImage: {
         "radial-gradient-red": "radial-gradient(circle 330px at  top left, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0)), radial-gradient(circle 280px at  bottom right, rgba(248, 113, 113, .6), rgba(248, 113, 113, 0))",
         "radial-gradient-green": "radial-gradient(circle 280px at  top left, rgba(179, 223, 152, .6), rgba(179, 223, 152, 0)),radial-gradient(circle 230px at  bottom right, rgba(179, 223, 152, .6), rgba(179, 223, 152, 0))",

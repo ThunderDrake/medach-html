@@ -1,0 +1,163 @@
+<header class="bg-white drop-shadow-md">
+  <div
+    class="header-wrapper min-h-[70px] xs:min-h-[96px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:justify-items-center items-center"
+  >
+    <div class="w-full flex justify-start">
+      <button class="flex flex-row items-center text-[#5F626F] text-[19px]">
+        <svg class="w-8 h-8">
+          <use xlink:href="img/sprite.svg#angle-left"></use>
+        </svg>
+        Выйти из редактора
+      </button>
+    </div>
+    <div
+      class="flex items-center flex-col xxs:flex-row text-[#C3C3C3] row-start-3 lg:row-start-auto mt-5 lg:mt-0"
+    >
+      Сохранено меньше минуты назад в
+      <span class="text-[#323232] underline mx-1">Черновиках</span>
+      <svg class="w-3 h-3">
+        <use xlink:href="img/sprite.svg#save-redaction"></use>
+      </svg>
+    </div>
+    <div
+      class="w-full flex xxs:justify-normal mt-5 flex-col xxs:flex-row xl:justify-end"
+    >
+      <div class="flex xxs:flex-center gap-5 mb-5 xxs:mb-0">
+        <button class="m-0 p-0">
+          <svg class="w-5 h-5">
+            <use xlink:href="img/sprite.svg#save-to-draft"></use>
+          </svg>
+        </button>
+        <button class="m-0 p-0">
+          <svg class="w-5 h-5">
+            <use xlink:href="img/sprite.svg#see-full"></use>
+          </svg>
+        </button>
+        <button class="m-0 p-0">
+          <svg class="w-5 h-5">
+            <use xlink:href="img/sprite.svg#download"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="relative">
+        <button
+          id="post"
+          class="xxs:ml-12 flex-between px-4 bg-[#323232] rounded-lg h-[53px] text-white min-w-[210px] z-50 relative peer"
+        >
+          Опубликовать
+          <span class="pl-5 border-l-[1px] border-l-white h-full flex-center">
+            <svg class="h-4 w-4">
+              <use xlink:href="img/sprite.svg#angle-down-white"></use>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="absolute w-[200px] min-h-[100px] bg-[#323232]/60 top-12 left-[5px] xxs:left-auto xxs:right-[5px] rounded-br-lg rounded-bl-lg z-10 flex-col items-center where hidden border-[1px] border-[#323232]"
+        >
+          <button
+            class="w-11/12 text-white/60 focus:font-helvetica focus:text-white text-base font-normal focus:font-semibold pt-5 flex items-start px-1 pb-2 border-b-[1px] border-b-black"
+            id="post-now"
+          >
+            Сейчас
+          </button>
+          <button
+            class="w-11/12 text-white/60 focus:text-white text-base font-normal focus:font-helvetica focus:font-semibold pt-2 flex items-start px-1 mb-5 focus:mb-3"
+            id="post-later"
+          >
+            Отложить
+          </button>
+          <div class="w-11/12 hidden" id="later">
+            <div class="flex justify-start px-1 flex-col font-golos">
+              <p class="m-0 p-0 text-white/60 text-base">Дата</p>
+              <div class="mt-[10px]">
+                <select
+                  class="bg-transparent border-none text-white text-base font-semibold"
+                  id="day-picker"
+                ></select>
+                <select
+                  class="bg-transparent border-none text-white text-base font-semibold w-fit max-w-[59px]"
+                  id="month-picker"
+                ></select>
+                <select
+                  class="bg-transparent border-none text-white text-base font-semibold"
+                  id="year-picker"
+                ></select>
+              </div>
+            </div>
+            <div class="mt-5 flex justify-start w-11/12 px-1 flex-col">
+              <p class="m-0 p-0 text-white/60 text-base">Время</p>
+              <div class="mt-[10px] flex flex-col items-center">
+                <div class="flex gap-4 items-center timeselector">
+                  <div class="flex flex-col items-center w-[30px]">
+                    <p
+                      class="text-white/40 text-base font-semibold m-0 p-0"
+                      id="prev-hour"
+                    >
+                      13
+                    </p>
+                    <button class="m-0 p-0" id="hour-back">
+                      <svg class="w-4 h-4">
+                        <use xlink:href="img/sprite.svg#angle-top-white"></use>
+                      </svg>
+                    </button>
+                    <p
+                      class="text-white text-[27px] font-semibold m-0 p-0"
+                      id="current-hour"
+                    >
+                      14
+                    </p>
+                    <button class="m-0 p-0" id="hour-next">
+                      <svg class="w-4 h-4 rotate-180">
+                        <use xlink:href="img/sprite.svg#angle-top-white"></use>
+                      </svg>
+                    </button>
+
+                    <p
+                      class="text-white/40 text-base font-semibold m-0 p-0"
+                      id="next-hour"
+                    >
+                      15
+                    </p>
+                  </div>
+                  <p class="text-xl font-golos text-white font-semibold">:</p>
+                  <div class="flex flex-col items-center w-[30px]">
+                    <p
+                      class="text-white/40 text-base font-semibold m-0 p-0"
+                      id="prev-minute"
+                    >
+                      13
+                    </p>
+                    <button class="m-0 p-0" id="minute-back">
+                      <svg class="w-4 h-4">
+                        <use xlink:href="img/sprite.svg#angle-top-white"></use>
+                      </svg>
+                    </button>
+                    <p
+                      class="text-white text-[27px] font-semibold m-0 p-0"
+                      id="current-minute"
+                    >
+                      14
+                    </p>
+                    <button class="m-0 p-0" id="minute-next">
+                      <svg class="w-4 h-4 rotate-180">
+                        <use xlink:href="img/sprite.svg#angle-top-white"></use>
+                      </svg>
+                    </button>
+
+                    <p
+                      class="text-white/40 text-base font-semibold m-0 p-0"
+                      id="next-minute"
+                    >
+                      15
+                    </p>
+                  </div>
+                </div>
+                <p class="m-0 p-0 text-white/60 text-base mt-3">ПО МСК</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

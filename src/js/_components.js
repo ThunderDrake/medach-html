@@ -5,3 +5,4 @@ import {archive} from './components/archive';
 import {video} from './components/video';
 import {article} from './components/article';
 import {calendar} from './components/calendar';
+import {redactor} from './components/redactor';
