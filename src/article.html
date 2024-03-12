@@ -62,15 +62,15 @@
     </div>
     <section
       id="main"
-      class="dark:bg-[#1D1D1D] bg-[#FCFCFC] transition-all duration-500 section"
+      class="dark:bg-[#1D1D1D] bg-[#FCFCFC] transition-all duration-500"
     >
       @include('partials/header.html')
       <div id="start"></div>
-      <div class="w-full flex gap-24 mt-24 relative justify-center">
+      <div class="w-full flex gap-24 mt-24 relative justify-center section">
         @include('partials/articleMobileSides.html')
         @include('partials/leftSideArticle.html')
         <div
-          class="flex flex-col w-full !max-w-[800px] font-helvetica relative z-0 h-full"
+          class="flex flex-col w-full 2xl:!max-w-[800px] font-helvetica relative z-0 h-full"
         >
           <div class="flex-between">
             <div
@@ -109,7 +109,11 @@
             veniam consequat sunt nostrud amet.
           </p>
           <div class="w-full relative z-0">
-            <img src="./img/man-in-glass.png" alt="man-in-glass" />
+            <img
+              src="./img/man-in-glass.png"
+              alt="man-in-glass"
+              class="w-full"
+            />
             <div
               class="w-8 h-8 rounded-full bg-white hover:bg-white/70 transition-all duration-500 drop-shadow-md absolute top-3 right-3 flex-center z-10"
             >
@@ -123,7 +127,10 @@
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <h2 class="font-medium text-3xl leading-10 text-black/80 mb-5">
+          <div id="brit"></div>
+          <h2
+            class="font-medium text-3xl leading-10 text-black/80 mb-5 scroll-title"
+          >
             Британские ученые опять что-то доказали
           </h2>
           <div class="text-[#5F626F] text-xl mb-12">
@@ -135,22 +142,18 @@
             blandit lectus. Nunc id risus vitae nisi hendrerit accumsan vel
             viverra mauris. Nullam sit amet magna sit amet risus accumsan
             sagittis id vitae neque. Лиофилизация
-            <div class="inline relative">
-              <svg class="w-6 h-6 inline cursor-pointer peer z-50">
+            <div class="inline relative tooltip-btn">
+              <svg class="w-6 h-6 inline cursor-pointer z-50">
                 <use xlink:href="img/sprite.svg#warning"></use>
               </svg>
-              <div
-                class="absolute top-8 right-0 translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-40 opacity-0 peer-hover:opacity-100 transition-all duration-500"
-              >
-                Лиофилиза́ция — способ мягкой сушки веществ, при котором
-                высушиваемый препарат замораживается, а потом помещается в
-                вакуумную камеру.
-              </div>
             </div>
             a odio vehicula, iaculis ligula ut, consectetur orci. Etiam accumsan
             consequat tellus ut feugiat
           </div>
-          <h2 class="font-medium text-3xl leading-10 text-black/80 mb-5">
+          <div id="limf"></div>
+          <h2
+            class="font-medium text-3xl leading-10 text-black/80 mb-5 scroll-title"
+          >
             Лимфоциты на страже здоровья глаз
           </h2>
           <div class="text-[#5F626F] text-xl mb-11">
@@ -161,17 +164,10 @@
             nulla, ut scelerisque sapien lorem non sem. Integer vestibulum
             ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo
             malesuada purus a mollis.
-            <div class="inline relative">
-              <svg class="w-6 h-6 inline cursor-pointer peer z-10">
+            <div class="inline relative tooltip-btn">
+              <svg class="w-6 h-6 inline cursor-pointer z-50">
                 <use xlink:href="img/sprite.svg#warning"></use>
               </svg>
-              <div
-                class="absolute top-8 right-0 md:translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-0 opacity-0 peer-hover:opacity-100 transition-all peer-hover:z-50 duration-500"
-              >
-                Лиофилиза́ция — способ мягкой сушки веществ, при котором
-                высушиваемый препарат замораживается, а потом помещается в
-                вакуумную камеру.
-              </div>
             </div>
           </div>
           <div class="bg-[#F3F7FF] rounded-xl p-6 box-border">
@@ -210,17 +206,10 @@
             ultrices sed scelerisque id, semper vel neque. Proin a turpis quis
             nibh cursus hendrerit sit amet vel libero. Nullam sit amet laoreet
             ante. Mauris sit
-            <div class="inline relative">
-              <svg class="w-6 h-6 inline cursor-pointer peer z-10">
+            <div class="inline relative tooltip-btn">
+              <svg class="w-6 h-6 inline cursor-pointer z-50">
                 <use xlink:href="img/sprite.svg#warning"></use>
               </svg>
-              <div
-                class="absolute top-8 right-0 md:translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-0 opacity-0 peer-hover:opacity-100 transition-all duration-500"
-              >
-                Лиофилиза́ция — способ мягкой сушки веществ, при котором
-                высушиваемый препарат замораживается, а потом помещается в
-                вакуумную камеру.
-              </div>
             </div>
             amet mi vitae arcu dignissim porttitor et in arcu. Nullam eleifend
             molestie arcu, pretium fermentum orci feugiat eget.
@@ -229,7 +218,10 @@
             Integer dapibus tincidunt ipsum, at rutrum magna rutrum at. Quisque
             pretium convallis vestibulum.
           </p>
-          <h2 class="font-medium text-3xl leading-10 text-black/80 mb-5">
+          <div id="rog"></div>
+          <h2
+            class="font-medium text-3xl leading-10 text-black/80 mb-5 scroll-title"
+          >
             Роговица в ежовых рукавицах
           </h2>
           <div class="text-[#5F626F] text-xl">
@@ -241,17 +233,10 @@
             ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo
             malesuada purus a mollis. Integer dapibus tincidunt ipsum, at rutrum
             magna rutrum at. Quisque pretium convallis vestibulum
-            <div class="inline relative">
-              <svg class="w-6 h-6 inline cursor-pointer peer z-10">
+            <div class="inline relative tooltip-btn">
+              <svg class="w-6 h-6 inline cursor-pointer z-50">
                 <use xlink:href="img/sprite.svg#warning"></use>
               </svg>
-              <div
-                class="absolute top-8 right-0 md:translate-x-1/2 w-[340px] h-[232] p-5 box-border bg-white drop-shadow-lg rounded-xl z-0 opacity-0 peer-hover:opacity-100 transition-all duration-500"
-              >
-                Лиофилиза́ция — способ мягкой сушки веществ, при котором
-                высушиваемый препарат замораживается, а потом помещается в
-                вакуумную камеру.
-              </div>
             </div>
           </div>
         </div>

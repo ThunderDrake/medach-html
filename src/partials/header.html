@@ -72,11 +72,32 @@
         </svg>
       </button>
 
-      <svg
-        class="w-8 h-8 bg-transparent bg-[#E5E5E5] dark:bg-white p-1 border border-black dark:border-[##E5E5E5] rounded-md cursor-pointer profile-page"
-      >
-        <use href="../img/sprite.svg#user"></use>
-      </svg>
+      <div class="relative">
+        <button
+          class="w-8 h-8 bg-[#E5E5E5] dark:bg-white p-1 border border-[#565656] dark:border-[##E5E5E5] rounded-md cursor-pointer profile-page flex-center relative userBtn"
+        >
+          <div
+            class="absolute -top-2 -right-1 w-4 h-4 bg-[#DE532D] border-2 border-[#FAFAFA] rounded-full"
+          ></div>
+          <svg class="w-5 h-5">
+            <use href="../img/sprite.svg#user"></use>
+          </svg>
+        </button>
+        <div
+          class="absolute w-[200px] min-h-[100px] bg-[#323232]/90 top-12 left-[5px] xxs:left-auto xxs:right-[5px] rounded-br-lg rounded-bl-lg rounded-tl-lg z-10 flex-col items-center role hidden shadow-lg"
+        >
+          <button
+            class="w-11/12 text-white/60 focus:font-helvetica focus:text-white text-base font-normal focus:font-semibold pt-5 flex items-start px-1 pb-2 border-b-[1px] border-b-black"
+          >
+            Пользователь
+          </button>
+          <button
+            class="w-11/12 text-white/60 focus:text-white text-base font-normal focus:font-helvetica focus:font-semibold pt-2 flex items-start px-1 mb-5"
+          >
+            Администратор
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </header>

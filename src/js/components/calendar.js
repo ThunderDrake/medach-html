@@ -3,10 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   let selectedDays = document.querySelectorAll('.day-selected');
   let daysarray = Array.from(weekDays)
   let daysBetween = [];
-  selectedDays.forEach((day)=>{
-    console.log(day)
-  })
-  console.log(daysarray)
+
   weekDays.forEach((day,i) => {
     day.addEventListener('click', () => {
       day.classList.add('day-selected')

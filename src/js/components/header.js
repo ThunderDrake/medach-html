@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded",() => {
   const menuLinks = document.querySelectorAll('.menuLink');
   const currentUrl = window.location.href;
   const isProfilePage = currentUrl.split('/').find((item)=>item==='account.html');
+  const profileButton = document.querySelectorAll(".userBtn");
+  const userRole = document.querySelectorAll(".role");
+
   if(isProfilePage&& isProfilePage.length > 0) {
     console.log(document.querySelector('.profile-page'))
     document.querySelector('.profile-page').classList.remove('bg-transparent');
@@ -121,4 +124,12 @@ document.addEventListener("DOMContentLoaded",() => {
 
     })
   })
+  if(profileButton){
+    profileButton.forEach((btn,i)=>{
+      btn.addEventListener('click',()=>{
+        userRole[i].classList.toggle('hidden');
+        userRole[i].classList.toggle('flex');
+
+    })})
+  }
 });

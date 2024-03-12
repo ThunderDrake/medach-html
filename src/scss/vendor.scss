@@ -172,6 +172,9 @@
 // стили для скролла simplebar
 // @import "../../node_modules/simplebar/dist/simplebar.min";
 
+//Стили для тултипов
+@import '../../node_modules/tippy.js/dist/tippy'; // optional for styling
+@import '../../node_modules/tippy.js/themes/light';
 // Стили для календаря
 .dayname{
   width: 30px;

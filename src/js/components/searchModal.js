@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded",(e)=>{
   const moreBtn = document.querySelectorAll('.more');
   const tags = document.querySelectorAll('.tags');
   moreBtn.forEach((btn,i)=>{
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       btn.childNodes[1].classList.toggle('rotate-180');
-      tags[i].classList.toggle('overflow-y-auto')
-      tags[i].classList.toggle('overflow-hidden')
 
+      tags[i].classList.toggle('max-h-[180px]');
     });
   })
   // moreBtn.addEventListener('click', () => {

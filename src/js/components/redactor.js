@@ -18,24 +18,38 @@ document.addEventListener("DOMContentLoaded", ()=>{
   const postLater = document.getElementById("post-later");
   const later = document.getElementById("later");
   const postNow = document.getElementById("post-now");
+  const redDel = document.querySelectorAll(".red-del");
+  if(redDel){
+    redDel.forEach((btn)=>{
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        btn.parentNode.remove();
+      })
+    })
+  }
+if(postButton){
   postButton.addEventListener("click", () => {
     firstFrom.classList.toggle('hidden');
     firstFrom.classList.toggle('flex');
   });
-  postLater.addEventListener("click", () => {
-    if(later.classList.contains('hidden')){
+  if(postLater || postNow){
+    postLater.addEventListener("click", () => {
+      if(later.classList.contains('hidden')){
+        later.classList.toggle('hidden');
+        later.classList.toggle('block');
+      }
+
+    });
+    postNow.addEventListener("click", () => {
+      if(later.classList.contains('block')){
       later.classList.toggle('hidden');
       later.classList.toggle('block');
+
     }
-
-  });
-  postNow.addEventListener("click", () => {
-    if(later.classList.contains('block')){
-    later.classList.toggle('hidden');
-    later.classList.toggle('block');
-
+    });
   }
-  });
+
+}
   if(dayPicker){
     for(let i = 1; i<=31;i++){
       let newOption;
@@ -126,10 +140,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
       }
     })
-    // const minuteBack = document.getElementById("minute-back");
-    // const minuteNext = document.getElementById("minute-next");
-    // const prevMinute = document.getElementById("prev-minute");
-    // const nextMinute = document.getElementById("next-minute");
-    // const currentMinute = document.getElementById("current-minute");
   }
 })

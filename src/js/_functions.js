@@ -46,7 +46,7 @@ import GraphModal from 'graph-modal';
 // Реализация табов
 import GraphTabs from 'graph-tabs';
 const currentUrl = window.location.href;
-const isProfilePage = currentUrl.split('/').find((item)=>item==='article.html');
+const isProfilePage = currentUrl.split(/[\/#]+/).find((item)=>item==='article.html');
 if(isProfilePage&& isProfilePage.length > 0) {
 const tabs = new GraphTabs('tab');
 const tabs2 = new GraphTabs('tab2');
@@ -61,10 +61,24 @@ const tabs2 = new GraphTabs('tab2');
 
 // Подключение плагина для позиционирования тултипов
 // import { createPopper, right} from '@popperjs/core';
-// createPopper(el, tooltip, {
+// createPopper(popperBtn[0], popper[0], {
 //   placement: 'right'
 // });
-
+//Тултипы
+import tippy from 'tippy.js';
+const content = `
+Лиофилиза́ция — способ мягкой сушки веществ, при котором
+высушиваемый препарат замораживается, а потом помещается в
+вакуумную камеру.
+`
+tippy('.tooltip-btn', {
+  content: content,
+  allowHTML: true,
+  theme: 'light',
+  animation: 'fade',
+  duration: [100, 200],
+  placement: 'bottom',
+});
 // Подключение свайпера
 import Swiper, { Navigation } from 'swiper';
 Swiper.use([Navigation]);

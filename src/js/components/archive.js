@@ -1,8 +1,33 @@
 import noUiSlider from 'nouislider';
 document.addEventListener("DOMContentLoaded",() => {
-  let html5Slider = document.getElementById('html5');
-let formatSlider = document.getElementById('dateslider');
+  const gridArchive = document.querySelector('.archiveGrid');
+  const classicArchive = document.querySelector('.archiveClassic');
+  const inlineBtn = document.querySelector('.apply-inline');
+  const gridBtn = document.querySelector('.apply-grid');
 
+  if(inlineBtn){
+    console.log(inlineBtn)
+    inlineBtn.addEventListener('click', () => {
+      gridArchive.classList.remove('hidden');
+      gridArchive.classList.add('flex');
+
+      classicArchive.classList.add('hidden');
+    });
+  }
+  if(gridBtn){
+    console.log(gridBtn)
+
+    gridBtn.addEventListener('click', () => {
+    console.log(gridBtn)
+
+      gridArchive.classList.add('hidden');
+      gridArchive.classList.remove('flex');
+
+      classicArchive.classList.remove('hidden');
+    });
+  }
+  let html5Slider = document.getElementById('html5');
+  let formatSlider = document.getElementById('dateslider');
   if(html5Slider || formatSlider){
     noUiSlider.create(html5Slider, {
       start: [2534, 32000],

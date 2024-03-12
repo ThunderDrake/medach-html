@@ -1,7 +1,35 @@
 document.addEventListener("DOMContentLoaded",() => {
   const progressBar = document.querySelector('.progressbar');
-  const section = document.querySelector('section');
+  const section = document.querySelector('.section');
+  // const scrollTitles = document.querySelectorAll('.scroll-title');
+  // const scrollDoc = document.querySelectorAll('.scroll-doc');
+  // console.log(scrollDoc)
+
+
 if(progressBar){
+  const mappings = [
+    {observe: '.scroll-title', change: '.scroll-doc', num:0, style: 'text-[#5F626F] font-medium scroll-doc'},
+    {observe: '.scroll-title', change: '.scroll-doc', num:1, style: 'text-[#5F626F] font-medium scroll-doc'},
+    {observe: '.scroll-title', change: '.scroll-doc', num:2, style: 'text-[#5F626F] font-medium scroll-doc'},
+  ];
+
+  mappings.forEach(mapping => {
+    const observerTarget = document.querySelectorAll(mapping.observe);
+    const elementToChange = document.querySelectorAll(mapping.change);
+    // console.log(elementToChange[mapping.num])
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          elementToChange[mapping.num].className = mapping.style;;
+        } else {
+          // Возвращаем исходное состояние, если нужно
+          elementToChange[mapping.num].className = 'text-[#9799A5] scroll-doc';
+        }
+      });
+    });
+    // console.log(observerTarget)
+    observer.observe(observerTarget[mapping.num]);
+  });
   const scrollProgressBar = () => {
     let scrollDistance = -(section.getBoundingClientRect().top);
     let progressPercentage =
@@ -16,8 +44,8 @@ if(progressBar){
         progressBar.style.width = '0%';
     }
 };
-
 window.addEventListener('scroll', scrollProgressBar);
+
 }
 
 })
