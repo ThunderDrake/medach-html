@@ -175,6 +175,35 @@
 //Стили для тултипов
 @import '../../node_modules/tippy.js/dist/tippy'; // optional for styling
 @import '../../node_modules/tippy.js/themes/light';
+.tippy-box[data-theme~='qual'] {
+  background-color: #FFFFFF;
+  color: #9799A5;
+  font-style: italic;
+  font-size: 18px;
+  border: 1px solid #323232
+}
+.tippy-box[data-theme~='green'] {
+  background-color: #FFFFFF;
+  color: #639942;
+  font-style: italic;
+  font-size: 18px;
+  border: 1px solid #B3DF98;
+  span{
+    color: #9799A5;
+  }
+}
+.tippy-box[data-theme~='yellow'] {
+  background-color: #FFFFFF;
+  color: #636363;
+  font-style: italic;
+  font-size: 18px;
+  border: 1px solid #FDE68A;
+  span{
+    color: #9799A5;
+  }
+}
+
+
 // Стили для календаря
 .dayname{
   width: 30px;

@@ -12,12 +12,10 @@ document.addEventListener("DOMContentLoaded",() => {
   const userRole = document.querySelectorAll(".role");
 
   if(isProfilePage&& isProfilePage.length > 0) {
-    console.log(document.querySelector('.profile-page'))
     document.querySelector('.profile-page').classList.remove('bg-transparent');
     document.querySelector('.profile-page').classList.remove('bg-[#E5E5E5]');
 
     document.querySelector('.profile-page').classList.add('bg-[#556583]/60');
-    console.log(document.querySelector('.profile-page'))
 
   }
   themeSwitcher.forEach((button)=>{

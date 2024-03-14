@@ -369,20 +369,30 @@
       <div
         class="flex-col w-full transition-all duration-500 font-helvetica mb-8"
       >
-        <p class="text-[#5F626F] text-xl leading-7 mb-7">
+        <p class="text-[#5F626F] text-xl leading-7 mb-14">
           &#8592; Вернуться к поиску
         </p>
 
-        <span class="text-2xl leading-7 text-[#9799A5]">
+        <span class="text-2xl leading-7 text-[#9799A5] mb-8">
           НАВИГАЦИЯ ПО СТРАНИЦЕ</span
         >
-        <div class="flex flex-col gap-5 text-xl mt-8">
-          <p class="text-[#5F626F] font-medium">
-            Британские ученые опять что-то доказали
-          </p>
-          <p class="text-[#9799A5]">Лимфоциты на страже здоровья глаз</p>
 
-          <p class="text-[#9799A5]">Роговица в ежовых рукавицах</p>
+        <div class="h-[8px] w-full bg-[#e1e1e1] mb-8 rounded-md">
+          <div
+            class="h-[8px] w-0 bg-[#323232] max-w-[300px] 3xl:max-w-[400px] rounded-md progressbar"
+          ></div>
+        </div>
+        <div class="flex flex-col gap-5 text-xl">
+          <a href="#brit" class="text-[#5F626F] font-medium scroll-doc">
+            Британские ученые опять что-то доказали
+          </a>
+          <a href="#limf" class="text-[#9799A5] scroll-doc"
+            >Лимфоциты на страже здоровья глаз</a
+          >
+
+          <a href="#rog" class="text-[#9799A5] scroll-doc"
+            >Роговица в ежовых рукавицах</a
+          >
         </div>
       </div>
       <div class="mb-5">
@@ -603,7 +613,7 @@
     <form class="graph-modal__content font-helvetica">
       <h2 class="text-4xl text-[#2B2C2E] font-medium">Добавить Категорию</h2>
 
-      <div class="text-[#2B2C2E] flex flex-wrap gap-8 mt-14 max-w-[900px]">
+      <div class="text-[#2B2C2E] flex flex-wrap gap-4 mt-14 max-w-[900px]">
         <label
           class="px-2 h-[40px] :bg-[#D1ECC1]/100 border-[#77C845] opacity-50 has-[:checked]:opacity-80 border-2 rounded-lg flex flex-center cursor-pointer"
           for="category-filter"

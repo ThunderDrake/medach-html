@@ -83,7 +83,7 @@
               >
                 emailexample@exmple.com
                 <button
-                  class="text-left flex items-center p-1 xs:ml-3 lg:ml-1 2xl:ml-3 bg-[#D1ECC1]/40 rounded-md border-[1px] w-fit border-[ #D1ECC1] hover:bg-[#D1ECC1]/80 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
+                  class="text-left flex items-center p-1 xs:ml-3 bg-[#D1ECC1]/40 rounded-md border-[1px] w-fit border-[ #D1ECC1] hover:bg-[#D1ECC1]/80 transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
                 >
                   изменить личные данные
                   <svg class="ml-1 h-2 w-2">
@@ -103,7 +103,7 @@
                 <h2 class="font-medium text-[#323232] text-2xl xs:text-[32px]">
                   Облать Интересов:
                 </h2>
-                <div class="grid grid-cols-3 gap-2">
+                <div class="grid grid-cols-3 gap-2 mt-4">
                   <div
                     class="flex items-center justify-center group p-1 ml-1 bg-[#D1ECC1]/40 rounded-md border-[1px] border-[ #D1ECC1] hover:bg-[#FA8C85]/30 hover:border-[#FA8C85] transition-all duration-500 text-[#323232] text-xs font-inter cursor-pointer"
                   >
@@ -209,14 +209,11 @@
               <div
                 class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
               >
-                <svg class="h-2 w-2">
-                  <use xlink:href="img/sprite.svg#plus"></use>
-                </svg>
-                <div
-                  class="h-10 italic text-lg text-[#9799A5] absolute w-[250px] bg-white border-[1px] border-[#323232] rounded-md -bottom-12 -right-6 lg:right-auto lg:-left-7 hidden group-hover:flex-center"
-                >
-                  Добавить Квалификацию?
-                </div>
+                <button class="qualTippy">
+                  <svg class="h-2 w-2">
+                    <use xlink:href="img/sprite.svg#plus"></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="mt-5 flex flex-col gap-6">
@@ -236,18 +233,11 @@
                   <div
                     class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
                   >
-                    <svg class="h-4 w-4">
-                      <use xlink:href="img/sprite.svg#question"></use>
-                    </svg>
-                    <div
-                      class="xs:h-24 p-1 xs:p-0 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#B3DF98] rounded-md -bottom-[102px] -left-[104px] xs:-left-64 xl:-left-6 hidden group-hover:flex group-hover:z-50 itemc-center flex-col xs:pl-6"
-                    >
-                      <p class="text-[#9799A5]">
-                        Благодоря этому навыку вы открыли
-                      </p>
-                      <p class="text-[#639942]">Доступ к редактору</p>
-                      <p class="text-[#639942]">достук к персонализации</p>
-                    </div>
+                    <button class="qualGreen">
+                      <svg class="h-4 w-4">
+                        <use xlink:href="img/sprite.svg#question"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -268,18 +258,11 @@
                   <div
                     class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
                   >
-                    <svg class="h-4 w-4">
-                      <use xlink:href="img/sprite.svg#question"></use>
-                    </svg>
-                    <div
-                      class="xs:h-24 p-1 xs:p-0 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#B3DF98] rounded-md -bottom-[102px] -left-[104px] xs:-left-64 xl:-left-6 hidden group-hover:z-50 group-hover:flex itemc-center flex-col xs:pl-6"
-                    >
-                      <p class="text-[#9799A5]">
-                        Благодоря этому навыку вы открыли
-                      </p>
-                      <p class="text-[#639942]">Доступ к редактору</p>
-                      <p class="text-[#639942]">достук к персонализации</p>
-                    </div>
+                    <button class="qualGreen">
+                      <svg class="h-4 w-4">
+                        <use xlink:href="img/sprite.svg#question"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -299,18 +282,11 @@
                   <div
                     class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
                   >
-                    <svg class="h-4 w-4">
-                      <use xlink:href="img/sprite.svg#question"></use>
-                    </svg>
-                    <div
-                      class="xs:h-24 p-1 xs:p-0 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#B3DF98] rounded-md -bottom-[102px] -left-[104px] xs:-left-64 xl:-left-6 hidden group-hover:flex group-hover:z-50 itemc-center flex-col xs:pl-6"
-                    >
-                      <p class="text-[#9799A5]">
-                        Благодоря этому навыку вы открыли
-                      </p>
-                      <p class="text-[#639942]">Доступ к редактору</p>
-                      <p class="text-[#639942]">достук к персонализации</p>
-                    </div>
+                    <button class="qualGreen">
+                      <svg class="h-4 w-4">
+                        <use xlink:href="img/sprite.svg#question"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -330,18 +306,11 @@
                   <div
                     class="ml-[5px] w-5 h-5 rounded-full border-[1px] border-[#000000] flex items-center justify-center hover:bg-black/10 transition-all duration-500 relative group"
                   >
-                    <svg class="h-4 w-4">
-                      <use xlink:href="img/sprite.svg#question"></use>
-                    </svg>
-                    <div
-                      class="xs:h-24 p-1 xs:p-0 italic text-lg absolute w-[320px] xs:w-[360px] bg-white border-[1px] border-[#FDE68A] rounded-md -bottom-[102px] -left-[104px] xs:-left-64 xl:-left-6 hidden group-hover:flex group-hover:z-50 itemc-center flex-col xs:pl-6"
-                    >
-                      <p class="text-[#9799A5]">
-                        Благодоря этому навыку вы открыли
-                      </p>
-                      <p class="text-[#636363]">Доступ к редактору</p>
-                      <p class="text-[#636363]">достук к персонализации</p>
-                    </div>
+                    <button class="qualYellow">
+                      <svg class="h-4 w-4">
+                        <use xlink:href="img/sprite.svg#question"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>

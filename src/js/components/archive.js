@@ -4,7 +4,21 @@ document.addEventListener("DOMContentLoaded",() => {
   const classicArchive = document.querySelector('.archiveClassic');
   const inlineBtn = document.querySelector('.apply-inline');
   const gridBtn = document.querySelector('.apply-grid');
+  // const cards=[{
+  //   image: {
+  //     url: '../../img/monkey.png',
+  //     alt:'Monkey image'
+  //   },
+  //   firstTags: ['Инфографика','Материал спонсирован'],
+  //   title:'В роговице обнаружены патрульные Т-лимфоциты',
+  //   description:'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+  //   date:'28.06.2022',
+  //   author: 'Лев Рублёв',
+  //   views: 192,
+  //   t:'1.6',
+  //   secondTags:
 
+  // }]
   if(inlineBtn){
     console.log(inlineBtn)
     inlineBtn.addEventListener('click', () => {

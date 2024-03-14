@@ -71,6 +71,42 @@ const content = `
 высушиваемый препарат замораживается, а потом помещается в
 вакуумную камеру.
 `
+const profileContent =`
+<span>
+  Благодоря этому навыку вы открыли
+</span>
+<p >Доступ к редактору</p>
+<p>достук к персонализации</p>
+`
+const qualContent =`
+  Добавить Квалификацию?
+`
+// qualGreen
+// qualYellow
+tippy(`.qualYellow`,{
+  content: profileContent,
+  allowHTML: true,
+  theme: 'yellow',
+  animation: 'fade',
+  duration: [100, 200],
+  placement: 'bottom',
+})
+tippy(`.qualGreen`,{
+  content: profileContent,
+  allowHTML: true,
+  theme: 'green',
+  animation: 'fade',
+  duration: [100, 200],
+  placement: 'bottom',
+})
+tippy(`.qualTippy`,{
+  content: qualContent,
+  allowHTML: true,
+  theme: 'qual',
+  animation: 'fade',
+  duration: [100, 200],
+  placement: 'bottom',
+})
 tippy('.tooltip-btn', {
   content: content,
   allowHTML: true,

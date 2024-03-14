@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded",() => {
   const progressBar = document.querySelector('.progressbar');
   const section = document.querySelector('.section');
-  // const scrollTitles = document.querySelectorAll('.scroll-title');
-  // const scrollDoc = document.querySelectorAll('.scroll-doc');
-  // console.log(scrollDoc)
 
 
-if(progressBar){
+if(progressBar && section) {
   const mappings = [
     {observe: '.scroll-title', change: '.scroll-doc', num:0, style: 'text-[#5F626F] font-medium scroll-doc'},
     {observe: '.scroll-title', change: '.scroll-doc', num:1, style: 'text-[#5F626F] font-medium scroll-doc'},
@@ -28,7 +25,10 @@ if(progressBar){
       });
     });
     // console.log(observerTarget)
-    observer.observe(observerTarget[mapping.num]);
+    if(observerTarget.length > 0) {
+      observer.observe(observerTarget[mapping.num]);
+
+    }
   });
   const scrollProgressBar = () => {
     let scrollDistance = -(section.getBoundingClientRect().top);
