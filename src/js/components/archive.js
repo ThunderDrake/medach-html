@@ -1,45 +1,47 @@
 import noUiSlider from 'nouislider';
 document.addEventListener("DOMContentLoaded",() => {
-  const gridArchive = document.querySelector('.archiveGrid');
-  const classicArchive = document.querySelector('.archiveClassic');
+  // const classicArchive = document.querySelector('.archiveClassic');
   const inlineBtn = document.querySelector('.apply-inline');
   const gridBtn = document.querySelector('.apply-grid');
-  // const cards=[{
-  //   image: {
-  //     url: '../../img/monkey.png',
-  //     alt:'Monkey image'
-  //   },
-  //   firstTags: ['Инфографика','Материал спонсирован'],
-  //   title:'В роговице обнаружены патрульные Т-лимфоциты',
-  //   description:'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
-  //   date:'28.06.2022',
-  //   author: 'Лев Рублёв',
-  //   views: 192,
-  //   t:'1.6',
-  //   secondTags:
+  const archive = document.querySelector('.archive');
+  const cards = document.querySelectorAll('.card');
+  const additionals = document.querySelectorAll('.card__additional');
+  const handleinlineGrid = (event)=>{
+    if(archive.classList.contains('archive-classic')){
+      archive.classList.toggle('archive-classic');
+      archive.classList.toggle('archive-inline');
+      cards.forEach((card)=>{
+        card.classList.toggle('card-small');
+        card.classList.toggle('card-big');
 
-  // }]
+      })
+      additionals.forEach((additional)=>{
+        additional.classList.toggle('card__additional-small');
+
+      })
+    }
+
+  }
+  const handleClassicGrid = (event)=>{
+    if(archive.classList.contains('archive-inline')){
+      archive.classList.toggle('archive-classic');
+      archive.classList.toggle('archive-inline');
+      cards.forEach((card)=>{
+        card.classList.toggle('card-small');
+        card.classList.toggle('card-big');
+
+      })
+      additionals.forEach((additional)=>{
+        additional.classList.toggle('card__additional-small');
+
+      })
+    }
+  }
   if(inlineBtn){
-    console.log(inlineBtn)
-    inlineBtn.addEventListener('click', () => {
-      gridArchive.classList.remove('hidden');
-      gridArchive.classList.add('flex');
-
-      classicArchive.classList.add('hidden');
-    });
+      inlineBtn.addEventListener('click', handleinlineGrid);
+      gridBtn.addEventListener('click', handleClassicGrid);
   }
-  if(gridBtn){
-    console.log(gridBtn)
 
-    gridBtn.addEventListener('click', () => {
-    console.log(gridBtn)
-
-      gridArchive.classList.add('hidden');
-      gridArchive.classList.remove('flex');
-
-      classicArchive.classList.remove('hidden');
-    });
-  }
   let html5Slider = document.getElementById('html5');
   let formatSlider = document.getElementById('dateslider');
   if(html5Slider || formatSlider){
