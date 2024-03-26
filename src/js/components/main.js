@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded",() => {
   const accordionButtons = document.querySelectorAll(".see-button");
   const accordionContents = document.querySelectorAll(".accordion-content");
-
+  const jobsSection = document.getElementById("jobs");
   accordionButtons.forEach((button,i) => {
     button.addEventListener("click", () => {
         const seeButton = button.childNodes[1].nodeName!=='#text' ? button.childNodes[1] : button.childNodes[0];
@@ -27,9 +27,13 @@ document.addEventListener("DOMContentLoaded",() => {
         },500)
       }
 
-
       if(accordionContents[i].classList.contains('one-col')){
+        if(accordionContents[i].classList.contains('job')){
+          jobsSection.classList.toggle('pb-[76px]');
+
+        }
         if(accordionContents[i].classList.contains("grid-rows-[1fr]")) {
+
           accordionContents[i].classList.remove("grid-rows-[1fr]");
           accordionContents[i].classList.remove("opacity-100");
           accordionContents[i].classList.add("grid-rows-[0fr]");

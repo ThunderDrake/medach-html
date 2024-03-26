@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded",() => {
   const isProfilePage = currentUrl.split('/').find((item)=>item==='account.html');
   const profileButton = document.querySelectorAll(".userBtn");
   const userRole = document.querySelectorAll(".role");
-
+  const header = document.querySelector("header");
+  console.log(header)
   if(isProfilePage&& isProfilePage.length > 0) {
     document.querySelector('.profile-page').classList.remove('bg-transparent');
     document.querySelector('.profile-page').classList.remove('bg-[#E5E5E5]');
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded",() => {
         nav.classList.add('opacity-100');
         main.classList.add('opacity-0');
         main.classList.remove('opacity-100');
+        header.classList.toggle("mobile-hidden");
         document.querySelector('.leftside') && document.querySelector('.leftside').classList.add('opacity-0');
         document.querySelector('.rightside') && document.querySelector('.rightside').classList.add('opacity-0');
 
@@ -62,6 +64,8 @@ document.addEventListener("DOMContentLoaded",() => {
         nav.classList.add('opacity-0');
         main.classList.add('opacity-0');
         main.classList.remove('opacity-100');
+        header.classList.toggle("mobile-hidden");
+
         document.querySelector('.leftside') && document.querySelector('.leftside').classList.remove('opacity-0');
         document.querySelector('.rightside') && document.querySelector('.rightside').classList.remove('opacity-0');
 
@@ -86,6 +90,8 @@ document.addEventListener("DOMContentLoaded",() => {
       nav.classList.add('opacity-0');
       main.classList.add('opacity-0');
       main.classList.remove('opacity-100');
+      header.classList.toggle("mobile-hidden");
+
       document.querySelector('.leftside') && document.querySelector('.leftside').classList.remove('opacity-0');
       document.querySelector('.rightside') && document.querySelector('.rightside').classList.remove('opacity-0');
 
@@ -110,6 +116,8 @@ document.addEventListener("DOMContentLoaded",() => {
         nav.classList.add('opacity-0');
         main.classList.add('opacity-0');
         main.classList.remove('opacity-100');
+        header.classList.toggle("mobile-hidden");
+
         setTimeout(()=>{
           nav.classList.add('hidden');
 

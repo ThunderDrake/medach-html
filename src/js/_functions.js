@@ -40,6 +40,8 @@ import GraphModal from 'graph-modal';
 
   const modal = new GraphModal('search');
   const modal2 = new GraphModal('articles');
+  const modal3 = new GraphModal('research');
+
 
 
 

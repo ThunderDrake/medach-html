@@ -20,9 +20,11 @@
   .wrapper {
     @apply max-w-7xl lg:mx-auto p-5 md:px-10 2xl:px-0 w-full;
   }
-
+  .mobile-hidden{
+    @apply hidden sm:block
+  }
   .header-wrapper {
-    @apply max-w-[2000px] lg:mx-auto p-5 md:px-10  w-full;
+    @apply  lg:mx-auto p-5 md:px-10  w-full;
   }
 
   .flex-center {
