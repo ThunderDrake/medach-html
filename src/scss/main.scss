@@ -78,6 +78,10 @@
   }
 }
 
+header {
+  z-index: 10000;
+}
+
 .archive {
   margin-top: 2rem;
 
@@ -110,10 +114,6 @@
     .separator {
       display: block;
       margin: 0 4px;
-    }
-
-    header {
-      z-index: 10000;
     }
 
     .card-small__tags {
